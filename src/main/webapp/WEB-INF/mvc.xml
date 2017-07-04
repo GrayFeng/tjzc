@@ -28,14 +28,14 @@
     
     <mvc:annotation-driven/>
 
-    <!-- 将无法mapping到Controller的path交给default servlet handler处理
-    <mvc:default-servlet-handler/>-->
+    <!-- 将无法mapping到Controller的path交给default servlet handler处理-->
+    <mvc:default-servlet-handler/>
 
-    <!-- 定义JSP文件的位置 
+    <!-- 定义JSP文件的位置 -->
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/jsp/"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
-    </bean>-->
+    </bean>
     <!--  接口访问规则规则
      <mvc:interceptors>
         <mvc:interceptor>
@@ -43,7 +43,7 @@
             <bean class="cn.tjzc.common.filter.RuleInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
-    -->
+-->
    	<bean id="jspWebInfViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewNames">

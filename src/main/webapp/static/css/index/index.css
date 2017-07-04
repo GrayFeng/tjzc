@@ -1,44 +1,7 @@
-  /* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
-
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-  width: auto;
-}
-
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -117,12 +80,45 @@ body {
 
 
 .service-type-box {
-  position: absolute;top: 90px;
-  left: 30px;
-  width: 520px;
-  height: 380px;
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  width: 450px;
+  height: 300px;
   background-color: #fff;
+  box-shadow: #333 1px 1px 10px;
 }
+
+  .service-type-box .order-item{
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-type-box .order-item button{
+    width: 200px;
+    border-radius: 0;
+  }
+
+  .service-type-box .order-item-label{
+    width: 60px;
+  }
+
+  .service-type-box .order-item-input{
+    width: 300px;
+    display: inline;
+    margin-left: 10px;
+  }
+
+  .service-type-box .order-item-checkbox{
+    width: 80px;
+    display: inline-block;
+  }
+
+  .service-type-box .order-item-checkbox label{
+    margin-left: 5px;
+  }
+
   .nav-tabs>li>a {
     color: #333;
     border-radius: 0;
@@ -135,4 +131,35 @@ body {
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #009a61;
     border-top: 2px #009a61 solid;
+  }
+
+  .hot-car-box{
+    height: 400px;
+  }
+
+  .hot-car-box img{
+    margin: 0;
+  }
+
+  .hot-car-box .col-md-5 img{
+    height: 400px;
+  }
+
+  .hot-car-box .col-md-5{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 400px;
+    width: 450px;
+  }
+  .hot-car-box .col-md-7{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 400px;
+    width: 730px;
+  }
+  .hot-car-box .col-md-7 span{
+    display: inline-block;
+    background-color: #ccc;
+    height: 197px;
+    width: 358px;
   }
