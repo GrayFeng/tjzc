@@ -1,17 +1,20 @@
 body{
-    padding-bottom: 40px;
+    padding:0;
     color: #5a5a5a;
 }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+.container {
+    width: 1200px;
+    padding: 0;
+    max-width: none !important;
+}
+
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 20;
 }
 
@@ -26,10 +29,10 @@ body{
     width: auto;
 }
 
-.container {
-    width: 1200px;
-    max-width: none !important;
+.navbar{
+    margin-bottom:0px;
 }
+
 .container .navbar-header,
 .container .navbar-collapse {
     margin-right: 0;

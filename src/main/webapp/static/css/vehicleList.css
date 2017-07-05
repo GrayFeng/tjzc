@@ -1,0 +1,63 @@
+.vehicle-list-order-info{
+    height: 100px;
+    border: 1px #5cb85c solid;
+    margin-top: 20px;
+}
+
+.vehicle-list-order-info button{
+    margin-top: 25px;
+}
+
+.vehicle-list-box{
+    padding: 0px;
+    margin-top: 20px;
+}
+.vehicle-list-box img{
+    width: 300px;
+    height: 200px;
+}
+.vehicle-list-lbs{
+    border: 1px #5cb85c solid;
+    height: 400px;
+    padding: 0px;
+    margin-top: 20px;
+}
+.vehicle-list-item-info{
+    height: 200px;
+}
+.vehicle-list-item-price{
+    text-align: right;
+    padding-right: 50px;
+}
+.vehicle-list-item-btn button {
+    margin-top: 80px;
+}
+
+.vehicle-list-order-info .order-item{
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+
+
+.vehicle-list-order-info .order-item-label{
+    width: 60px;
+}
+
+.vehicle-list-order-info .order-item-input{
+    width: 300px;
+    display: inline;
+    margin-left: 10px;
+}
+
+.vehicle-list-order-info .order-item-checkbox{
+    width: 80px;
+    display: inline-block;
+}
+
+.vehicle-list-order-info .order-item-checkbox{
+    margin-left: 10px;
+}
+
+.vehicle-list-order-info .order-item-checkbox label{
+    margin-left: 5px;
+}

@@ -10,35 +10,8 @@
 <html lang="zh-CN">
 <head>
   <%@include file="include/header.jsp"%>
+  <link href="static/css/login.css" rel="stylesheet">
   <title>登陆</title>
-  <style type="text/css">
-    .login-box{
-      height: 500px;
-      width: 100%;
-      background-color: #ccc;
-      margin-top: 55px;
-    }
-    .form-signin{
-      width: 400px;
-      display: block;
-      position: absolute;
-      right: 50px;
-      top: 130px;
-      background-color: #fff;
-      height: 350px;
-      padding: 15px 30px 15px 30px;
-    }
-    .form-signin .form-control{
-      margin-bottom: 20px;
-      height: 45px;
-    }
-    .form-signin button{
-      border-radius: 0;
-    }
-    .form-signin .checkbox {
-      margin-top: 20px;
-    }
-  </style>
 </head>
 <body>
 <div class="navbar-wrapper">

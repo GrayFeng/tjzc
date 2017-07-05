@@ -10,7 +10,7 @@
 <html lang="zh-CN">
 <head>
   <%@include file="include/header.jsp"%>
-  <link href="static/css/index/index.css" rel="stylesheet">
+  <link href="static/css/index.css" rel="stylesheet">
   <title>首页</title>
 </head>
 <body>
@@ -66,13 +66,13 @@
       <div class="order-item">
         <label class="order-item-label">xxxx</label>
         <span class="order-item-checkbox">
-          <input type="checkbox"><label>xxxx</label>
+          <input type="radio" name="type-radio" value="a"><label>xxxx</label>
         </span>
         <span class="order-item-checkbox">
-          <input type="checkbox"><label>xxxx</label>
+          <input type="radio" name="type-radio" value="b"><label>xxxx</label>
         </span>
         <span class="order-item-checkbox">
-          <input type="checkbox"><label>xxxx</label>
+          <input type="radio" name="type-radio" value="c"><label>xxxx</label>
         </span>
       </div>
       <div class="order-item">
