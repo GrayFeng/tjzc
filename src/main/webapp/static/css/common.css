@@ -3,6 +3,10 @@ body{
     color: #5a5a5a;
 }
 
+footer{
+    text-align: center;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -108,9 +112,10 @@ body{
   background: #fafafa;
 }
 .navbar-default .navbar-brand {
-  color: #333;
+  color: #5cb85c;
   width: 300px;
   text-align: center;
+  font-weight: bold;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -201,6 +206,22 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #5cb85c;
 }
 
+.nav-tel-icon a{
+    padding: 0 0 0 15px !important;
+}
+.nav-tel-icon i{
+    margin-top: 10px;
+    background: url('../image/nav-tel-icon.png') no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+.nav-tel-number a{
+    padding-left: 5px !important;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5cb85c !important;
+}
 
 .carousel-indicators .active {
     width: 12px;
@@ -211,4 +232,27 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .carousel-indicators li {
     border: 1px solid #5cb85c;
+}
+
+.footer-info-box dl{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    width: 300px;
+    float: left;
+}
+
+.footer-info-box>dl>dt{
+    display: block;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+.footer-info-box>dl>dd>a{
+     display: inline-block;
+     width: 140px;
+    color: #93939e;
+ }
+.footer-info-box>dl>dd>a:hover{
+    text-decoration: none;
+    color: #93939e;
 }

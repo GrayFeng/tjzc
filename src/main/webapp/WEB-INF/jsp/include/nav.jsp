@@ -12,13 +12,16 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Project name</a>
+                    <a class="navbar-brand" href="<%=request.getContextPath()%>/">XXXX租车</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a href="#">首页</a></li>
+                        <li><a href="#about">租车服务</a></li>
+                        <li><a href="#contact">旅游服务</a></li>
+                        <li><a href="#contact">房车服务</a></li>
+                        <li><a href="#contact">企业服务</a></li>
+                        <!--
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -31,12 +34,14 @@
                                 <li><a href="#">Separated link</a></li>
                                 <li><a href="#">One more separated link</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li><a href="<%=request.getContextPath()%>/login.do">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">我的中心</a></li>
+                        <li class="nav-tel-icon"><a href="#"><i></i></a></li>
+                            <li class="nav-tel-number"><a href="#">400-000-0000</a></li>
                     </ul>
                 </div>
             </div>

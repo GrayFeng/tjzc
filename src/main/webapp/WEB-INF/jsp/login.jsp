@@ -14,37 +14,23 @@
   <title>登陆</title>
 </head>
 <body>
-<div class="navbar-wrapper">
-  <div class="container">
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </div>
-    </nav>
-  </div>
-</div>
+
+<%@include file="include/nav.jsp" %>
 
 <div class="container login-box">
 
   <form class="form-signin">
-    <h2 class="form-signin-heading">Please sign in</h2>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <h2 class="form-signin-heading">登录</h2>
+    <label for="inputEmail" class="sr-only">账号／手机号</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="账号／手机号" required autofocus>
+    <label for="inputPassword" class="sr-only">密码</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
     <div class="checkbox">
       <label>
-        <input type="checkbox" value="remember-me"> Remember me
+        <input type="checkbox" value="remember-me"> 记住我
       </label>
     </div>
-    <button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+    <button class="btn btn-lg btn-success btn-block" type="submit">登录</button>
   </form>
 
 </div> <!-- /container -->

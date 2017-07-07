@@ -21,7 +21,6 @@
   height: 500px;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -43,7 +42,7 @@
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -77,12 +76,13 @@
   }
 }
 
+.service-type-container{
+  position: relative;
+  margin-top: -430px;
+}
 
 
 .service-type-box {
-  position: absolute;
-  top: 130px;
-  left: 50px;
   width: 450px;
   height: 300px;
   background-color: #fff;
@@ -135,7 +135,12 @@
     border-top: 2px #009a61 solid;
   }
 
+  .marketing{
+    padding-top: 150px;
+  }
+
   .hot-car-box{
+    margin: 0;
     height: 400px;
   }
 
@@ -148,7 +153,7 @@
   }
 
   .hot-car-box .col-md-5{
-    padding-left: 5px;
+    padding-left: 0px;
     padding-right: 5px;
     height: 400px;
     width: 450px;
@@ -157,11 +162,12 @@
     padding-left: 5px;
     padding-right: 5px;
     height: 400px;
-    width: 730px;
+    width: 740px;
   }
   .hot-car-box .col-md-7 span{
     display: inline-block;
     background-color: #ccc;
     height: 197px;
-    width: 358px;
+    width: 363px;
+    margin-bottom: 5px;
   }
