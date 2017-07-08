@@ -12,7 +12,7 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="<%=request.getContextPath()%>/">XXXX租车</a>
+                    <a class="navbar-brand" href="<%=request.getContextPath()%>/">大行道</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">

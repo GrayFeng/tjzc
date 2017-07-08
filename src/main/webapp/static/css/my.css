@@ -1,0 +1,109 @@
+.my-center-box{
+    background-color:#f2f3f5;
+    padding: 30px 0px 50px 0px;
+}
+.my-center-menu{
+     width: 260px;
+     margin-right: 10px;
+     min-height: 400px;
+     padding: 0;
+     background-color: #fff;
+     -webkit-box-shadow: 0 0 5px rgba(228, 230, 233, 1);
+     -moz-box-shadow: 0 0 5px rgba(228, 230, 233, 1);
+     box-shadow: 0 0 5px rgba(228, 230, 233, 1)
+ }
+.my-center-menu .list-group{
+    width: 260px;
+}
+
+.my-center-menu .list-group-item {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: center;
+    color: #93939e;
+}
+
+.my-center-menu .list-group-item:first-child {
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+}
+
+.my-center-menu .list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    color: #fff;
+    background-color: #7fb2e6;
+    border-color: #e0dfdf;
+    font-weight: bold;
+}
+
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+    color: #fff;
+    background-color: #7fb2e6;
+    border-color: #e0dfdf;
+    font-weight: bold;
+}
+
+.my-center-content{
+    width: 930px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: 0 0 5px rgba(228, 230, 233, 1);
+    -moz-box-shadow: 0 0 5px rgba(228, 230, 233, 1);
+    box-shadow: 0 0 5px rgba(228, 230, 233, 1)
+}
+.search-box{
+    height: 40px;
+    float: right;
+}
+.search-form input{
+     display: inline;
+     width: 200px;
+     margin-left: 10px;
+ }
+.search-form button{
+    display: inline;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.search-order-status{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    border-bottom:1px #f2f3f5 solid;
+}
+
+.search-order-status .nav-pills>li>a {
+    color: #93939e;
+    background-color: #f2f3f5;
+    border-radius: 0px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.search-order-status .nav-pills>li>a:focus,
+.search-order-status .nav-pills>li>a:hover,
+.search-order-status .nav-pills>li.active>a,
+.search-order-status .nav-pills>li.active>a:focus,
+.search-order-status .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #7fb2e6;
+}
+
+.my-center-content table{
+    margin-bottom: 0;
+}
+.my-center-content table>thead {
+    background-color: #f2f3f5;
+    color: #93939e;
+}
+.page-navigation{
+    text-align: right;
+}
