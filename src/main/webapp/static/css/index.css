@@ -126,15 +126,15 @@
     border-radius: 0;
   }
   .nav-tabs > li > a:hover {
-    color: #1F87E8;
-    border-top: 2px #1F87E8 solid;
+    color: #39BC30;
+    border-top: 2px #39BC30 solid;
     background-color: transparent;
   }
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #1F87E8;
-    border-top: 2px #1F87E8 solid;
+    color: #39BC30;
+    border-top: 2px #39BC30 solid;
   }
-
+  
   .marketing{
     padding-top: 150px;
   }

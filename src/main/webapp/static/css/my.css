@@ -16,6 +16,7 @@
     width: 260px;
 }
 
+
 .my-center-menu .list-group-item {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -35,7 +36,7 @@
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     color: #fff;
-    background-color: #7fb2e6;
+    background-color: #4ecf5b;
     border-color: #e0dfdf;
     font-weight: bold;
 }
@@ -45,7 +46,7 @@ button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
     color: #fff;
-    background-color: #7fb2e6;
+    background-color: #4ecf5b;
     border-color: #e0dfdf;
     font-weight: bold;
 }
@@ -94,7 +95,7 @@ button.list-group-item:focus {
 .search-order-status .nav-pills>li.active>a:focus,
 .search-order-status .nav-pills>li.active>a:hover {
     color: #fff;
-    background-color: #7fb2e6;
+    background-color: #4ecf5b;
 }
 
 .my-center-content table{

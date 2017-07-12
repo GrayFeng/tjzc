@@ -8,17 +8,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div class="navbar-wrapper">
-    <div class="container">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<%=request.getContextPath()%>/">大行道</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<%=request.getContextPath()%>/login.do">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">我的中心</a></li>
+                    <li class="nav-tel-icon"><a href="#"><i></i></a></li>
+                    <li class="nav-tel-number"><a href="#">400-000-0000</a></li>
+                </ul>
+            </div>
+            <div class="navbar-box">
+            <div class="container navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">首页</a></li>
                         <li><a href="#about">租车服务</a></li>
                         <li><a href="#contact">旅游服务</a></li>
+                        <li><a href="#contact">签证服务</a></li>
                         <li><a href="#contact">房车服务</a></li>
                         <li><a href="#contact">企业服务</a></li>
                         <!--
@@ -36,15 +45,7 @@
                             </ul>
                         </li>-->
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="<%=request.getContextPath()%>/login.do">登录</a></li>
-                        <li><a href="#">注册</a></li>
-                        <li><a href="#">我的中心</a></li>
-                        <li class="nav-tel-icon"><a href="#"><i></i></a></li>
-                            <li class="nav-tel-number"><a href="#">400-000-0000</a></li>
-                    </ul>
                 </div>
-            </div>
+                </div>
         </nav>
-    </div>
 </div>
