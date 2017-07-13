@@ -45,7 +45,7 @@
     <h3>热门国家</h3>
 
     <div class="row visa-hot-country">
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-usa.jpg"/>
             </a>
@@ -53,7 +53,7 @@
                 <h4>美国签证</h4>
             </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-tg.jpg"/>
             </a>
@@ -61,7 +61,7 @@
                 <h4>泰国签证</h4>
             </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-fg.jpg"/>
             </a>
@@ -69,7 +69,7 @@
                 <h4>法国签证</h4>
             </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-az.jpg"/>
             </a>
@@ -77,7 +77,7 @@
                 <h4>澳大利亚签证</h4>
             </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-jp.jpg"/>
             </a>
@@ -85,7 +85,7 @@
                 <h4>日本签证</h4>
             </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-yg.jpg"/>
             </a>
@@ -93,7 +93,7 @@
                 <h4>英国签证</h4>
             </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-flb.jpg"/>
             </a>
@@ -101,7 +101,7 @@
                 <h4>菲律宾签证</h4>
             </div>
         </div>
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-ml.jpg"/>
             </a>

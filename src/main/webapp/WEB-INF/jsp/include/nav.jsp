@@ -24,10 +24,10 @@
             <div class="navbar-box">
             <div class="container navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">首页</a></li>
+                        <li class="active"><a href="<%=request.getContextPath()%>/">首页</a></li>
                         <li><a href="#about">租车服务</a></li>
-                        <li><a href="#contact">旅游服务</a></li>
-                        <li><a href="#contact">签证服务</a></li>
+                        <li><a href="<%=request.getContextPath()%>/tours/index.do">旅游服务</a></li>
+                        <li><a href="<%=request.getContextPath()%>/visa/index.do">签证服务</a></li>
                         <li><a href="#contact">房车服务</a></li>
                         <li><a href="#contact">企业服务</a></li>
                         <!--

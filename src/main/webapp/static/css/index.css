@@ -136,7 +136,15 @@
   }
   
   .marketing{
-    padding-top: 150px;
+    padding-top: 120px;
+  }
+
+.hot-car-list a{
+  margin-bottom: 10px;
+}
+
+  .hot-car-list .caption{
+    text-align: center;
   }
 
   .hot-car-box{
