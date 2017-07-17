@@ -11,6 +11,7 @@
 <head>
     <%@include file="include/header.jsp" %>
     <link href="static/css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TR8b21eM8ofQ1sPEND1udSrixkwGEEIQ"></script>
     <title>首页</title>
 </head>
 <body>
@@ -63,16 +64,16 @@
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
                 <div class="order-item">
-                    <label class="order-item-label">用车时间</label><input class="order-item-input form-control" type="text"
-                                                                       placeholder="">
+                    <label class="order-item-label">用车时间</label><input id="orderTime" readonly="readonly" class="order-item-input form-control" type="text"
+                                                                       placeholder="请选择用车时间">
                 </div>
                 <div class="order-item">
-                    <label class="order-item-label">出发地点</label><input class="order-item-input form-control" type="text"
-                                                                       placeholder="">
+                    <label class="order-item-label">出发地点</label><input id="orderStartAddress" readonly="readonly" class="order-item-input form-control" type="text"
+                                                                       placeholder="请选择出发地点">
                 </div>
                 <div class="order-item">
-                    <label class="order-item-label">送达地点</label><input class="order-item-input form-control" type="text"
-                                                                       placeholder="">
+                    <label class="order-item-label">送达地点</label><input id="orderEndAddress" readonly="readonly" class="order-item-input form-control" type="text"
+                                                                       placeholder="请选择送达地点">
                 </div>
                 <div class="order-item" style="margin-top: 15px;">
                     <label class="order-item-label">包车天数</label>
@@ -174,6 +175,50 @@
 
 </div>
 <!-- /.container -->
+
+<!--地图选择框-->
+<div class="modal fade mapModal" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mapModalLabel">选择地址</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5 col-xs-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Text input with multiple buttons">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" aria-label="Bold"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                Cras justo odio
+                            </a>
+                            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item">Morbi leo risus</a>
+                            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item">Vestibulum at eros</a>
+                            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item">Morbi leo risus</a>
+                            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item">Vestibulum at eros</a>
+                            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item">Morbi leo risus</a>
+                            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item">Vestibulum at eros</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-xs-7">
+                        <div id="allmap" class="allmap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <%@include file="include/footer.jsp" %>
 <!-- Bootstrap core JavaScript
