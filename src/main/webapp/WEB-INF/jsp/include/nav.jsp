@@ -11,7 +11,9 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="<%=request.getContextPath()%>/">大行道</a>
+                    <a class="navbar-brand" href="<%=request.getContextPath()%>/">
+                        <img src="<%=request.getContextPath()%>/static/image/logo.png" width="260px" height="50px">
+                    </a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<%=request.getContextPath()%>/login.do">登录</a></li>
