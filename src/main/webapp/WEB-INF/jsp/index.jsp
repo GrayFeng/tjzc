@@ -43,22 +43,99 @@
 
 <div class="container marketing">
 
+    <h3>热门车型</h3>
+
+    <div class="row hot-car-list">
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/01.jpg">
+            </a>
+            <div class="caption">
+                <h4>宝马5系</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/02.jpg">
+            </a>
+            <div class="caption">
+                <h4>别克GL8</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/05.jpg">
+            </a>
+            <div class="caption">
+                <h4>别克凯越</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/06.jpg">
+            </a>
+            <div class="caption">
+                <h4>奥迪A6L</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/07.jpg">
+            </a>
+            <div class="caption">
+                <h4>雪弗兰景程</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/08.jpg">
+            </a>
+            <div class="caption">
+                <h4>大众帕萨特</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/07.jpg">
+            </a>
+            <div class="caption">
+                <h4>雪弗兰景程</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/08.jpg">
+            </a>
+            <div class="caption">
+                <h4>大众帕萨特</h4>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- START THE FEATURETTES -->
+
+<div class="container marketing">
+
     <h3>精彩活动</h3>
 
     <div class="row featurette hot-car-box">
-        <div class="col-md-5">
+        <div class="col-md-3">
             <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
                  alt="Generic placeholder image">
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
             <div>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-01.jpg" width="363px" height="197px"></span>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-02.jpg" width="363px" height="197px"></span>
+                <span><img src="<%=request.getContextPath()%>/static/image/hot-01.jpg"></span>
+                <span><img src="<%=request.getContextPath()%>/static/image/hot-02.jpg"></span>
             </div>
             <div>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-03.jpg" width="363px" height="197px"></span>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-04.jpg" width="363px" height="197px"></span>
+                <span><img src="<%=request.getContextPath()%>/static/image/hot-03.jpg"></span>
+                <span><img src="<%=request.getContextPath()%>/static/image/hot-04.jpg"></span>
             </div>
+        </div>
+        <div class="col-md-3">
+            <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
+                 alt="Generic placeholder image">
         </div>
     </div>
 

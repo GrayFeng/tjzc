@@ -312,12 +312,42 @@ fieldset[disabled] .btn-success.focus {
 .carousel-indicators li {
     border: 1px solid #4ecf5b;
 }
+footer{
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #707070;
+}
+
+
+.footer-characteristic{
+    margin-top: 20px;
+    margin-right: 35px;
+    padding-left: 45px;
+    padding-right: 25px;
+}
+
+.footer-characteristic .col-md-2 {
+   margin-right: 35px;
+}
+
+.footer-characteristic .col-md-2 img{
+    background-color: inherit;
+    border: none;
+    margin-bottom: 5px;
+    width: 48px;
+    height: 48px;
+}
+
+.footer-info-box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 .footer-info-box dl{
     display: block;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
     margin: 0;
-    width: 300px;
+    width: 230px;
     float: left;
 }
 
@@ -331,6 +361,9 @@ fieldset[disabled] .btn-success.focus {
      width: 140px;
     color: #93939e;
  }
+.footer-info-box>dl>dd>a>img{
+    height: 130px;
+}
 .footer-info-box>dl>dd>a:hover{
     text-decoration: none;
     color: #93939e;

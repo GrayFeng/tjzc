@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<<link href="<%=request.getContextPath()%>/static/css/selectAddress.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/static/css/selectAddress.css" rel="stylesheet">
 <!--地图选择框-->
 <div class="modal fade mapModal" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel">
     <div class="modal-dialog" role="document">

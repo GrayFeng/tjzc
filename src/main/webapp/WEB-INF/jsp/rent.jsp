@@ -45,7 +45,7 @@
     <h3>热门车型</h3>
 
     <div class="row hot-car-list">
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/01.jpg">
             </a>
@@ -53,7 +53,7 @@
                 <h4>宝马5系</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/02.jpg">
             </a>
@@ -61,7 +61,7 @@
                 <h4>别克GL8</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/05.jpg">
             </a>
@@ -69,7 +69,7 @@
                 <h4>别克凯越</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/06.jpg">
             </a>
@@ -77,23 +77,7 @@
                 <h4>奥迪A6L</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
-            <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/07.jpg">
-            </a>
-            <div class="caption">
-                <h4>雪弗兰景程</h4>
-            </div>
-        </div>
-        <div class="col-xs-2 col-md-2">
-            <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/08.jpg">
-            </a>
-            <div class="caption">
-                <h4>大众帕萨特</h4>
-            </div>
-        </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/01.jpg">
             </a>
@@ -101,7 +85,7 @@
                 <h4>宝马5系</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/02.jpg">
             </a>
@@ -109,7 +93,7 @@
                 <h4>别克GL8</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/05.jpg">
             </a>
@@ -117,7 +101,7 @@
                 <h4>别克凯越</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
                 <img src="<%=request.getContextPath()%>/static/image/index/06.jpg">
             </a>
@@ -125,20 +109,100 @@
                 <h4>奥迪A6L</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/07.jpg">
+                <img src="<%=request.getContextPath()%>/static/image/index/01.jpg">
             </a>
             <div class="caption">
-                <h4>雪弗兰景程</h4>
+                <h4>宝马5系</h4>
             </div>
         </div>
-        <div class="col-xs-2 col-md-2">
+        <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/08.jpg">
+                <img src="<%=request.getContextPath()%>/static/image/index/02.jpg">
             </a>
             <div class="caption">
-                <h4>大众帕萨特</h4>
+                <h4>别克GL8</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/05.jpg">
+            </a>
+            <div class="caption">
+                <h4>别克凯越</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/06.jpg">
+            </a>
+            <div class="caption">
+                <h4>奥迪A6L</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/01.jpg">
+            </a>
+            <div class="caption">
+                <h4>宝马5系</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/02.jpg">
+            </a>
+            <div class="caption">
+                <h4>别克GL8</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/05.jpg">
+            </a>
+            <div class="caption">
+                <h4>别克凯越</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/06.jpg">
+            </a>
+            <div class="caption">
+                <h4>奥迪A6L</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/01.jpg">
+            </a>
+            <div class="caption">
+                <h4>宝马5系</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/02.jpg">
+            </a>
+            <div class="caption">
+                <h4>别克GL8</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/05.jpg">
+            </a>
+            <div class="caption">
+                <h4>别克凯越</h4>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%=request.getContextPath()%>/static/image/index/06.jpg">
+            </a>
+            <div class="caption">
+                <h4>奥迪A6L</h4>
             </div>
         </div>
     </div>

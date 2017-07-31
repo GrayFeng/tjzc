@@ -79,6 +79,7 @@
 .service-type-container{
   position: relative;
   margin-top: -410px;
+  margin-bottom: 80px;
 }
 
 
@@ -136,7 +137,7 @@
   }
   
   .marketing{
-    padding-top: 120px;
+    margin-bottom: 20px;
   }
 
 .hot-car-list a{
@@ -156,26 +157,30 @@
     margin: 0;
   }
 
-  .hot-car-box .col-md-5 img{
+  .hot-car-box .col-md-3 img{
     height: 400px;
+    width: 300px;
   }
 
-  .hot-car-box .col-md-5{
-    padding-left: 0px;
-    padding-right: 5px;
-    height: 400px;
-    width: 450px;
+  .hot-car-box .col-md-3{
+    padding: 0;
   }
-  .hot-car-box .col-md-7{
+  .hot-car-box .col-md-6{
     padding-left: 5px;
     padding-right: 5px;
     height: 400px;
-    width: 740px;
+    width: 590px;
   }
-  .hot-car-box .col-md-7 span{
+
+  .hot-car-box .col-md-6 img{
+     height: 198px;
+     width: 288px;
+   }
+
+  .hot-car-box .col-md-6 span{
     display: inline-block;
     background-color: #ccc;
-    height: 197px;
-    width: 363px;
+    height: 198px;
+    width: 288px;
     margin-bottom: 5px;
   }
