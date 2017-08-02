@@ -17,7 +17,7 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<%=request.getContextPath()%>/login.do">登录</a></li>
-                    <li><a href="#">注册</a></li>
+                    <li><a href="<%=request.getContextPath()%>/reg.do">注册</a></li>
                     <li><a href="<%=request.getContextPath()%>/my/index.do">我的中心</a></li>
                     <li class="nav-tel-icon"><a href="#"><i></i></a></li>
                     <li class="nav-tel-number"><a href="#">400-000-0000</a></li>
@@ -27,25 +27,37 @@
             <div class="container navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath()%>/">首页</a></li>
-                        <li><a href="<%=request.getContextPath()%>/rent/index.do">租车服务</a></li>
-                        <li><a href="<%=request.getContextPath()%>/tours/index.do">旅游服务</a></li>
-                        <li><a href="<%=request.getContextPath()%>/visa/index.do">签证服务</a></li>
-                        <li><a href="#contact">房车服务</a></li>
-                        <li><a href="#contact">企业服务</a></li>
-                        <!--
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <a href="<%=request.getContextPath()%>/rent/index.do" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">我要用车</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
+                                <li><a href="<%=request.getContextPath()%>/rent/index.do">日租包车</a></li>
+                                <li><a href="<%=request.getContextPath()%>/rent/index.do">机场接送</a></li>
+                                <li><a href="<%=request.getContextPath()%>/rent/index.do">车站接送</a></li>
+                                <li><a href="<%=request.getContextPath()%>/rent/index.do">短租长租</a></li>
+                                <li><a href="<%=request.getContextPath()%>/rent/index.do">企业包车</a></li>
                             </ul>
-                        </li>-->
+                        </li>
+                        <li class="dropdown">
+                            <a href="<%=request.getContextPath()%>/tours/index.do" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">定制旅行</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%=request.getContextPath()%>/tours/index.do">国内旅游</a></li>
+                                <li><a href="<%=request.getContextPath()%>/tours/index.do">出境旅游</a></li>
+                                <li><a href="<%=request.getContextPath()%>/tours/index.do">商务旅游</a></li>
+                                <li><a href="<%=request.getContextPath()%>/visa/index.do">签证办理</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">房车出游</a></li>
+                        <li><a href="#contact">企业服务</a></li>
+                        <li class="dropdown">
+                            <a href="<%=request.getContextPath()%>/tours/index.do" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">关于我们</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%=request.getContextPath()%>/tours/index.do">联系我们</a></li>
+                                <li><a href="<%=request.getContextPath()%>/tours/index.do">帮助中心</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 </div>

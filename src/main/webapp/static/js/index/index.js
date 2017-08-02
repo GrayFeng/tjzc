@@ -7,9 +7,14 @@ var index = {
     bindEvent: function(){
         //服务类型tab页切换
         $('#serviceTypeTabs a').click(function (e) {
-            e.preventDefault()
+            e.preventDefault();
             //$(this).tab('show')
-            console.info('1');
+            var tabFlag = $(this).attr('aria-controls');
+                if(tabFlag == 'czdz'||tabFlag == 'qybc'){
+                    $('#common-order-item').hide();
+                }else{
+                    $('#common-order-item').show();
+                }
         });
 
         //地址选择
@@ -21,6 +26,11 @@ var index = {
         $('#orderEndAddress').on('click',function(){
             selectAddress.init(2);
         })
+        $('#orderTime,#orderCZTime').datetimepicker({
+            language: "zh-CN",
+            format: "yyyy-mm-dd hh:00",
+            autoclose: true
+        });
     }
 };
 

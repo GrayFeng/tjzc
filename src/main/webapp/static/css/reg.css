@@ -1,0 +1,23 @@
+.nav-tabs>li>a {
+    color: #333;
+    border-radius: 0;
+}
+.nav-tabs > li > a:hover {
+    color: #33cc00;
+    border-top: 2px #33cc00 solid;
+    background-color: transparent;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #33cc00;
+    border-top: 2px #33cc00 solid;
+}
+
+.reg-box{
+    padding: 30px 150px;
+}
+.reg-box .tab-pane{
+    margin-top: 30px;
+}
+.reg-box button{
+    width: 100px;
+}

@@ -243,6 +243,19 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #33cc00 !important;
 }
 
+.nav> li:hover .dropdown-menu {display: block;}
+
+.dropdown-menu{
+    min-width: inherit;
+}
+
+.dropdown-menu >li>a{
+    text-align: center;
+    font-size: 16px;
+}
+.dropdown-menu >li>a:hover{
+    color: #33cc00;
+}
 
 .btn-success {
     color: #fff;
@@ -371,4 +384,8 @@ footer{
 
 .pagination>li>a, .pagination>li>span {
     color: #33cc00;
+}
+
+.display-none{
+    display: none;
 }

@@ -78,14 +78,14 @@
 
 .service-type-container{
   position: relative;
-  margin-top: -410px;
+  margin-top: -430px;
   margin-bottom: 80px;
 }
 
 
 .service-type-box {
   width: 450px;
-  height: 330px;
+  height: 365px;
   background-color: #fff;
   box-shadow: #333 1px 1px 10px;
 }
@@ -110,6 +110,17 @@
     display: inline;
     margin-left: 10px;
   }
+
+  .service-type-box .order-item-checkbox-small{
+    width: 50px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+.service-type-box .order-item-checkbox-small label{
+  margin-left: 5px;
+}
 
   .service-type-box .order-item-checkbox{
     width: 89px;

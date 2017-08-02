@@ -19,23 +19,29 @@
 
 <div class="container login-box">
 
-  <form class="form-signin">
-    <h2 class="form-signin-heading">登录</h2>
-    <label for="inputEmail" class="sr-only">账号／手机号</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="账号／手机号" required autofocus>
-    <label for="inputPassword" class="sr-only">密码</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" value="remember-me"> 记住我
-      </label>
+  <div class="form-signin">
+    <div class="login-tab-box">
+      <h2 class="form-signin-heading active person">个人</h2>
+      <h2 class="form-signin-heading company">企业</h2>
     </div>
-    <button class="btn btn-lg btn-success btn-block" type="submit">登录</button>
-  </form>
+    <div class="login-content-box">
+      <input type="email" id="inputCompany" class="form-control display-none" placeholder="电子邮箱" required autofocus>
+      <input type="tel" id="inputEmail" class="form-control" placeholder="手机号" required autofocus>
+      <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+      <!--<div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me"> 记住我
+        </label>
+      </div>
+      -->
+      <button class="btn btn-lg btn-success btn-block" type="submit">登录</button>
+    </div>
+  </div>
 
 </div> <!-- /container -->
 
 <%@include file="include/footer.jsp"%>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="static/js/index/ie10-viewport-bug-workaround.js"></script>
+<script src="static/js/login.js"></script>
 </body>
