@@ -82,3 +82,4 @@
   </footer>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<%=request.getContextPath()%>/static/js/bootstrap.min.js"></script>
+<script src="<%=request.getContextPath()%>/static/js/common.js"></script>

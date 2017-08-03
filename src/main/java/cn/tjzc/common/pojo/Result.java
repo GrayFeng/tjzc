@@ -1,6 +1,7 @@
 package cn.tjzc.common.pojo;
 
 import cn.tjzc.common.enums.EEchoCode;
+import com.alibaba.fastjson.JSON;
 
 /**
  * diceGame
@@ -45,6 +46,10 @@ public class Result {
 	public Result(String status,String msg){
 		this.status = status;
 		this.msg = msg;
+	}
+
+	public String toJSONString(){
+		return JSON.toJSONString(this);
 	}
 	
 	public static Result getSuccessResult(){

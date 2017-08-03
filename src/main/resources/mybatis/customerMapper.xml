@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="cn.tjzc.my.dao.ICustomerDao">
+
+    <insert id="addCustomer" parameterType="Customer">
+        <selectKey resultType="String" keyProperty="id" order="BEFORE">
+            select  replace(uuid(),'-','')   from dual
+        </selectKey>
+        insert into t_customer
+        (id,login_name,display_name,password,id_number,tax_id,contact_mobile,contact,status,type,create_time)
+        values
+        (#{id},#{loginName},#{displayName},#{password},#{idNumber},#{taxId},#{contactMobile},#{contact},0,#{type},now())
+
+    </insert>
+
+    <select id="getCustomerByloginName" resultType="Customer" parameterType="String">
+        select id,login_name as loginName,password from t_customer where login_name = #{loginName} and status = 0 limit 0,1;
+    </select>
+</mapper> 

@@ -11,14 +11,14 @@
 <head>
     <%@include file="include/header.jsp" %>
     <link href="<%=request.getContextPath()%>/static/css/reg.css" rel="stylesheet">
-    <title>首页</title>
+    <title>用户注册</title>
 </head>
 <body>
 
 <%@include file="include/nav.jsp" %>
 
 <div class="container reg-box">
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav nav-tabs" role="tablist" id="regTypeNav">
         <li role="presentation" class="active">
             <a href="#person" aria-controls="person" role="tab" data-toggle="tab">个人注册</a>
         </li>
@@ -37,6 +37,20 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 control-label">密码:</label>
+
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword1" class="col-sm-2 control-label">确认密码:</label>
+
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword1" placeholder="请输入确认密码">
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">姓名:</label>
 
                     <div class="col-sm-10">
@@ -52,7 +66,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="button" class="btn btn-lg btn-success">注册</button>
+                        <button id="personRegBtn" type="button" class="btn btn-lg btn-success">注册</button>
                     </div>
                 </div>
             </form>
@@ -65,6 +79,20 @@
 
                     <div class="col-sm-10">
                         <input type="tel" class="form-control" id="inputEmail" placeholder="请输入电子邮箱">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword2" class="col-sm-2 control-label">密码:</label>
+
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="请输入密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">确认密码:</label>
+
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="请输入确认密码">
                     </div>
                 </div>
                 <div class="form-group">
@@ -97,7 +125,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="button" class="btn btn-lg btn-success">注册</button>
+                        <button id="companyRegBtn" type="button" class="btn btn-lg btn-success">注册</button>
                     </div>
                 </div>
             </form>
@@ -116,5 +144,43 @@
 <script src="static/js/index/holder.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="static/js/index/ie10-viewport-bug-workaround.js"></script>
+
+<script>
+
+    $('#personRegBtn').on('click',function(){
+        var regInfo = {};
+        regInfo.loginName=$('#inputTel').val();
+        regInfo.displayName=$('#inputName').val();
+        regInfo.password=$('#inputPassword').val();
+        regInfo.idNumber=$('#inputIdNum').val();
+        regInfo.type = 0;
+        reg(regInfo);
+
+    });
+
+    $('#companyRegBtn').on('click',function(){
+        var regInfo = {};
+        regInfo.loginName=$('#inputEmail').val();
+        regInfo.displayName=$('#inputCompanyName').val();
+        regInfo.password=$('#inputPassword').val();
+        regInfo.taxId=$('#inputSH').val();
+        regInfo.contact=$('#inputLXR').val();
+        regInfo.contactMobile=$('#inputLXDH').val();
+        regInfo.type = 1;
+        reg(regInfo);
+    });
+
+
+    function reg(regInfo){
+        dxd.ajax({
+            url : contextPath + '/api/reg/add.do',
+            data: regInfo,
+            success:function(data){
+                dxd.alert(JSON.stringify(data));
+            }
+        })
+    }
+
+</script>
 </body>
 </html>

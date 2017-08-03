@@ -386,6 +386,10 @@ footer{
     color: #33cc00;
 }
 
+.modal-body{
+    word-wrap: break-word;
+}
+
 .display-none{
     display: none;
 }
