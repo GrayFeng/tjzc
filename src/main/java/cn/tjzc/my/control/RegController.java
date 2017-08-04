@@ -1,5 +1,6 @@
 package cn.tjzc.my.control;
 
+import cn.tjzc.common.annotation.NotNeedLogin;
 import cn.tjzc.common.enums.EEchoCode;
 import cn.tjzc.common.pojo.Customer;
 import cn.tjzc.common.pojo.Result;
@@ -25,6 +26,7 @@ public class RegController {
 
     @RequestMapping("/api/reg/add")
     @ResponseBody
+    @NotNeedLogin
     public String add(Customer customer){
         Result result = Result.getSuccessResult();
         Customer oldCustomer = customerService.getCustomerByloginName(customer.getLoginName());

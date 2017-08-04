@@ -19,7 +19,7 @@
                 <a href="#czjs" aria-controls="czjs" role="tab" data-toggle="tab">车站接送</a>
             </li>
             <li role="presentation">
-                <a href="#czdz" aria-controls="czdz" role="tab" data-toggle="tab">长租短租</a>
+                <a href="#czdz" aria-controls="czdz" role="tab" data-toggle="tab">月租包车</a>
             </li>
             <li role="presentation">
                 <a href="#qybc" aria-controls="qybc" role="tab" data-toggle="tab">企业包车</a>
@@ -54,13 +54,13 @@
                     <div class="order-item" style="margin-bottom: 25px;" >
                         <label class="order-item-label">包车天数</label>
                         <span class="order-item-checkbox" style="margin-left: 13px;">
-                          <input type="radio" name="type-radio" value="a"><label>单次</label>
+                          <input type="radio" name="type-radio" value="单次" checked="checked"><label>单次</label>
                         </span>
                         <span class="order-item-checkbox">
-                          <input type="radio" name="type-radio" value="b"><label>半天</label>
+                          <input type="radio" name="type-radio" value="半天"><label>半天</label>
                         </span>
                         <span class="order-item-checkbox">
-                          <input type="radio" name="type-radio" value="c"><label>全天</label>
+                          <input type="radio" name="type-radio" value="全天"><label>全天</label>
                         </span>
                     </div>
                 </div>
@@ -71,17 +71,17 @@
                     </div>
                     <div class="order-item">
                         <span class=" order-item-checkbox-small">
-                          <input type="radio" name="type-radio" value="a"><label>接机</label>
+                          <input type="radio" name="fetchSend-fly-type-radio" value="0" checked="checked"><label>接机</label>
                         </span>
                         <span class="order-item-checkbox-small ">
-                          <input type="radio" name="type-radio" value="b"><label>送机</label>
+                          <input type="radio" name="fetchSend-fly-type-radio" value="1"><label>送机</label>
                         </span>
                         |
                          <span class="order-item-checkbox-small">
-                          <input type="radio" name="type-radio" value="a"><label>单程</label>
+                          <input type="radio" name="single-fly-type-radio" value="0" checked="checked"><label>单程</label>
                         </span>
                         <span class="order-item-checkbox-small">
-                          <input type="radio" name="type-radio" value="b"><label>往返</label>
+                          <input type="radio" name="single-fly-type-radio" value="1"><label>往返</label>
                         </span>
                     </div>
                 </div>
@@ -92,17 +92,17 @@
                     </div>
                     <div class="order-item">
                         <span class=" order-item-checkbox-small">
-                          <input type="radio" name="type-radio" value="a"><label>接站</label>
+                          <input type="radio" name="fetchSend-type-radio" value="0" checked="checked"><label>接站</label>
                         </span>
                         <span class="order-item-checkbox-small ">
-                          <input type="radio" name="type-radio" value="b"><label>送站</label>
+                          <input type="radio" name="fetchSend-type-radio" value="1"><label>送站</label>
                         </span>
                         |
                          <span class="order-item-checkbox-small">
-                          <input type="radio" name="type-radio" value="a"><label>单程</label>
+                          <input type="radio" name="single-type-radio" value="0" checked="checked"><label>单程</label>
                         </span>
                         <span class="order-item-checkbox-small">
-                          <input type="radio" name="type-radio" value="b"><label>往返</label>
+                          <input type="radio" name="single-type-radio" value="1"><label>往返</label>
                         </span>
                     </div>
                 </div>
@@ -122,12 +122,8 @@
                 <div class="order-item" style="margin-top: 30px;margin-bottom: 30px;">
                     <label class="order-item-label">选择租期</label>
                     <select class="form-control order-item-input" id="orderZQ">
-                        <option value="1">1个月 短租</option>
-                        <option value="2">2个月 短租</option>
-                        <option value="3">3个月 短租</option>
-                        <option value="4">4个月 长租</option>
-                        <option value="5">5个月 长租</option>
-                        <option value="6">6个月 长租</option>
+                        <option value="短租">短租(1-3个月)</option>
+                        <option value="长租">长租(4-12个月)</option>
                     </select>
                 </div>
             </div>
@@ -144,17 +140,19 @@
                 <div class="order-item" style="margin-top: 30px;margin-bottom: 30px">
                     <label class="order-item-label">选择租期</label>
                     <select class="form-control order-item-input" id="orderQYBCZQ">
-                        <option value="3">3年</option>
-                        <option value="4">4年</option>
-                        <option value="5">5年</option>
-                        <option value="6">6年</option>
-                        <option value="7">7年</option>
-                        <option value="8">8年</option>
+                        <option value="3年">3年</option>
+                        <option value="4年">4年</option>
+                        <option value="5年">5年</option>
+                        <option value="6年">6年</option>
+                        <option value="7年">7年</option>
+                        <option value="8年">8年</option>
+                        <option value="9年">9年</option>
+                        <option value="10年">10年</option>
                     </select>
                 </div>
             </div>
                 <div class="order-item">
-                    <button type="button" class="btn btn-lg btn-success">预订</button>
+                    <button id="rentBtn" type="button" class="btn btn-lg btn-success">预订</button>
                 </div>
         </div>
 

@@ -385,7 +385,9 @@ footer{
 .pagination>li>a, .pagination>li>span {
     color: #33cc00;
 }
-
+.modal-header{
+    padding: 10px;
+}
 .modal-body{
     word-wrap: break-word;
 }

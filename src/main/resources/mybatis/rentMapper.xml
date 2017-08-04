@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="cn.tjzc.rent.dao.IRentDao">
+
+    <insert id="addOrder" parameterType="Order">
+        <selectKey resultType="String" keyProperty="id" order="BEFORE">
+            select  replace(uuid(),'-','')   from dual
+        </selectKey>
+        insert into t_order
+        (id,order_no,type,start_time,tenancy,start_address,
+        end_address,fetch_send,flight_train,single,status,remark,
+        customer_id,customer_type,customer_name,customer_mobile,customer_car_type,create_time)
+        values
+        (#{id},#{orderNo},#{type},#{startTime},#{tenancy},#{startAddress},
+        #{endAddress},#{fetchSend},#{flightTrain},#{single},1,#{remark},
+        #{customerId},#{customerType},#{customerName},#{customerMobile},#{customerCarType},now())
+
+    </insert>
+
+    <select id="getCarTypeList" resultType="CarType">
+        select id,type from t_car_type;
+    </select>
+
+    <select id="getOrderList" resultType="Order" parameterType="Map">
+        select id,
+        order_no as orderNo,
+        start_time as startTime,
+        start_address as startAddress,
+        end_address as endAddress,
+        type,
+        customer_car_type as customerCarType,
+        total,
+        status
+        from t_order
+        where customer_id = #{customerId}
+    </select>
+</mapper> 

@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.tjzc.common.pojo.Customer;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,15 +34,13 @@ public class RuleInterceptor extends HandlerInterceptorAdapter{
 			throws Exception {
 		String uid = request.getParameter("uid");
 		String uri = request.getRequestURI();
+		Customer customer = (Customer)request.getSession().getAttribute("customer");
 		printRequestParams(request);
 		HandlerMethod handlerMethod =  (HandlerMethod)handler;
 		Result result = null;
 		if(uri.contains("/api/")){
-			if(handlerMethod.getMethodAnnotation(NotNeedUID.class) == null 
-					&& (StringUtils.isEmpty(uid) || !MemberCache.getInstance().isHave(uid))){
-				result = new Result(EEchoCode.ERROR.getCode(),"缺少UID认证信息");
-			}else if(handlerMethod.getMethodAnnotation(NotNeedLogin.class) == null 
-					&& !MemberCache.getInstance().isLogin(uid)){
+			if(handlerMethod.getMethodAnnotation(NotNeedLogin.class) == null
+					&& customer == null){
 					result = new Result(EEchoCode.NOT_LOGIN.getCode(),"用户未登录");
 			}
 			if(result != null){
@@ -53,6 +52,9 @@ public class RuleInterceptor extends HandlerInterceptorAdapter{
 				response.flushBuffer();
 				return false;
 			}
+		}else if(uri.contains("/my/") && customer == null){
+			response.sendRedirect(request.getContextPath() + "/login.do");
+			return false;
 		}
 		return true;
 	}

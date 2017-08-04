@@ -25,8 +25,8 @@
       <h2 class="form-signin-heading company">企业</h2>
     </div>
     <div class="login-content-box">
-      <input type="email" id="inputCompany" class="form-control display-none" placeholder="电子邮箱" required autofocus>
-      <input type="tel" id="inputEmail" class="form-control" placeholder="手机号" required autofocus>
+      <input type="email" id="inputEmail" class="form-control display-none" placeholder="电子邮箱" required autofocus>
+      <input type="tel" id="inputTel" class="form-control" placeholder="手机号" required autofocus>
       <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
       <!--<div class="checkbox">
         <label>
@@ -34,7 +34,7 @@
         </label>
       </div>
       -->
-      <button class="btn btn-lg btn-success btn-block" type="submit">登录</button>
+      <button class="btn btn-lg btn-success btn-block" type="submit" id="loginBtn">登录</button>
     </div>
   </div>
 

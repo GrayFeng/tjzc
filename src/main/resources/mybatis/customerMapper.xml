@@ -16,6 +16,14 @@
     </insert>
 
     <select id="getCustomerByloginName" resultType="Customer" parameterType="String">
-        select id,login_name as loginName,password from t_customer where login_name = #{loginName} and status = 0 limit 0,1;
+        select id,
+        login_name as loginName,
+        display_name as displayName,
+        password,
+        contact_mobile as contactMobile,
+        contact,
+        type
+        from t_customer
+        where login_name = #{loginName} and status = 0 limit 0,1;
     </select>
 </mapper> 

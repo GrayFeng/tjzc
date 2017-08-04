@@ -47,54 +47,28 @@
       <table class="table table-bordered">
         <thead>
         <tr>
-          <th width="15%">服务类型</th>
-          <th>出发地址</th>
-          <th>送达地址</th>
+          <th width="15%">订单号码</th>
           <th>用车时间</th>
+          <th>出发地点</th>
+          <th>送达地点</th>
+          <th width="10%">服务类型</th>
+          <th width="10%">车型</th>
           <th width="10%">订单金额</th>
           <th width="10%">订单状态</th>
         </tr>
         </thead>
-        <tr>
-          <td>包车服务</td>
-          <td>天津市滨江道</td>
-          <td>天津滨海国际机场</td>
-          <td>2017-01-01 10:00</td>
-          <td>&yen100</td>
-          <td>成功</td>
-        </tr>
-        <tr>
-          <td>包车服务</td>
-          <td>天津市滨江道</td>
-          <td>天津滨海国际机场</td>
-          <td>2017-01-01 10:00</td>
-          <td>&yen100</td>
-          <td>成功</td>
-        </tr>
-        <tr>
-          <td>包车服务</td>
-          <td>天津市滨江道</td>
-          <td>天津滨海国际机场</td>
-          <td>2017-01-01 10:00</td>
-          <td>&yen100</td>
-          <td>成功</td>
-        </tr>
-        <tr>
-          <td>包车服务</td>
-          <td>天津市滨江道</td>
-          <td>天津滨海国际机场</td>
-          <td>2017-01-01 10:00</td>
-          <td>&yen100</td>
-          <td>成功</td>
-        </tr>
-        <tr>
-          <td>包车服务</td>
-          <td>天津市滨江道</td>
-          <td>天津滨海国际机场</td>
-          <td>2017-01-01 10:00</td>
-          <td>&yen100</td>
-          <td>成功</td>
-        </tr>
+        <tbody id="dataList">
+            <tr>
+              <td>包车服务</td>
+              <td>天津市滨江道</td>
+              <td>天津滨海国际机场</td>
+              <td>2017-01-01 10:00</td>
+              <td>&yen100</td>
+              <td>成功</td>
+              <td>&yen100</td>
+              <td>成功</td>
+            </tr>
+        </tbody>
       </table>
       <nav class="page-navigation" aria-label="Page navigation">
         <ul class="pagination">
@@ -121,5 +95,6 @@
 
 <%@include file="include/footer.jsp"%>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="static/js/index/ie10-viewport-bug-workaround.js"></script>
+<script src="<%=request.getContextPath()%>/static/js/index/ie10-viewport-bug-workaround.js"></script>
+<script src="<%=request.getContextPath()%>/static/js/my.js"></script>
 </body>

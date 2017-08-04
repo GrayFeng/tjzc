@@ -16,9 +16,18 @@
                     </a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<%=request.getContextPath()%>/login.do">登录</a></li>
-                    <li><a href="<%=request.getContextPath()%>/reg.do">注册</a></li>
-                    <li><a href="<%=request.getContextPath()%>/my/index.do">我的中心</a></li>
+                    <c:choose>
+                        <c:when test="${customer!=null}">
+                            <li><a href="#">您好，${customer.displayName}</a></li>
+                            <li><a href="<%=request.getContextPath()%>/my/index.do">我的中心</a></li>
+                            <li><a href="<%=request.getContextPath()%>/logout.do">退出</a></li>
+                        </c:when>
+                        <c:otherwise>
+                            <li><a href="<%=request.getContextPath()%>/login.do">登录</a></li>
+                            <li><a href="<%=request.getContextPath()%>/reg.do">注册</a></li>
+                            <li><a href="<%=request.getContextPath()%>/my/index.do">我的中心</a></li>
+                        </c:otherwise>
+                    </c:choose>
                     <li class="nav-tel-icon"><a href="#"><i></i></a></li>
                     <li class="nav-tel-number"><a href="#">400-000-0000</a></li>
                 </ul>
@@ -34,7 +43,7 @@
                                 <li><a href="<%=request.getContextPath()%>/rent/index.do">日租包车</a></li>
                                 <li><a href="<%=request.getContextPath()%>/rent/index.do">机场接送</a></li>
                                 <li><a href="<%=request.getContextPath()%>/rent/index.do">车站接送</a></li>
-                                <li><a href="<%=request.getContextPath()%>/rent/index.do">短租长租</a></li>
+                                <li><a href="<%=request.getContextPath()%>/rent/index.do">月租包车</a></li>
                                 <li><a href="<%=request.getContextPath()%>/rent/index.do">企业包车</a></li>
                             </ul>
                         </li>

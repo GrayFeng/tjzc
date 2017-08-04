@@ -10,6 +10,7 @@
 <html lang="zh-CN">
 <head>
     <%@include file="include/header.jsp" %>
+    <link href="<%=request.getContextPath()%>/static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath()%>/static/css/index.css" rel="stylesheet">
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TR8b21eM8ofQ1sPEND1udSrixkwGEEIQ"></script>
     <title>首页</title>
@@ -218,10 +219,12 @@
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="../../dist/js/bootstrap.min.js"></script>-->
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+
 <script src="<%=request.getContextPath()%>/static/js/index/holder.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="<%=request.getContextPath()%>/static/js/index/ie10-viewport-bug-workaround.js"></script>
-
+<script src="<%=request.getContextPath()%>/static/js/bootstrap-datetimepicker.min.js"></script>
+<script src="<%=request.getContextPath()%>/static/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <script src="<%=request.getContextPath()%>/static/js/index/index.js"></script>
 
 </body>

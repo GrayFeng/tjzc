@@ -11,6 +11,7 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
+
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
             <list>
@@ -36,14 +37,14 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-    <!--  接口访问规则规则
+    <!--  接口访问规则规则-->
      <mvc:interceptors>
         <mvc:interceptor>
-            <mvc:mapping path="/api/**"/>
+            <mvc:mapping path="/**"/>
             <bean class="cn.tjzc.common.filter.RuleInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
--->
+
    	<bean id="jspWebInfViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewNames">
