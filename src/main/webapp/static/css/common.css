@@ -382,6 +382,10 @@ footer{
     color: #93939e;
 }
 
+.pagination .cur{
+    background-color: #f2f3f5;
+}
+
 .pagination>li>a, .pagination>li>span {
     color: #33cc00;
 }

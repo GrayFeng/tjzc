@@ -10,6 +10,7 @@
 <html lang="zh-CN">
 <head>
   <%@include file="include/header.jsp"%>
+  <link href="<%=request.getContextPath()%>/static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
   <link href="<%=request.getContextPath()%>/static/css/my.css" rel="stylesheet">
   <title>我的中心</title>
 </head>
@@ -23,25 +24,26 @@
         <a href="#" class="list-group-item active">
           我的订单
         </a>
-        <a href="#" class="list-group-item">我的订单</a>
-        <a href="#" class="list-group-item">我的订单</a>
-        <a href="#" class="list-group-item">我的订单</a>
-        <a href="#" class="list-group-item">我的订单</a>
+        <a href="#" class="list-group-item">我的信息</a>
+        <a href="#" class="list-group-item">修改密码</a>
       </div>
     </div>
     <div class="col-lg-8 my-center-content">
       <div class="search-box">
         <div class="search-form">
-          <input type="email" id="start-time" class="form-control" placeholder="起始时间" required autofocus>
-          <input type="email" id="end-time" class="form-control" placeholder="截止时间" required autofocus>
-          <button class="btn btn-success btn-block" type="submit">查询</button>
+          <input type="email" id="startTime" class="form-control" placeholder="起始时间" required>
+          <input type="email" id="endTime" class="form-control" placeholder="截止时间" required>
+          <button id="searchBtn" class="btn btn-success btn-block" type="submit">查询</button>
         </div>
       </div>
       <div class="search-order-status">
-        <ul class="nav nav-pills">
-          <li role="presentation" class="active"><a href="#">创建</a></li>
-          <li role="presentation"><a href="#">派单</a></li>
-          <li role="presentation"><a href="#">完成</a></li>
+        <ul id="statusUL" class="nav nav-pills">
+          <li role="presentation"class="active" ><a href="javascript:void(0)" data-value="0">全部</a></li>
+          <li role="presentation"><a href="javascript:void(0)" data-value="1">等待处理</a></li>
+          <li role="presentation"><a href="javascript:void(0)" data-value="2">预约完成</a></li>
+          <li role="presentation"><a href="javascript:void(0)" data-value="3">订单完成</a></li>
+          <li role="presentation"><a href="javascript:void(0)" data-value="4">订单取消</a></li>
+          <li role="presentation"><a href="javascript:void(0)" data-value="5">订单终结</a></li>
         </ul>
         </div>
       <table class="table table-bordered">
@@ -57,36 +59,10 @@
           <th width="10%">订单状态</th>
         </tr>
         </thead>
-        <tbody id="dataList">
-            <tr>
-              <td>包车服务</td>
-              <td>天津市滨江道</td>
-              <td>天津滨海国际机场</td>
-              <td>2017-01-01 10:00</td>
-              <td>&yen100</td>
-              <td>成功</td>
-              <td>&yen100</td>
-              <td>成功</td>
-            </tr>
-        </tbody>
+        <tbody id="dataList"></tbody>
       </table>
       <nav class="page-navigation" aria-label="Page navigation">
         <ul class="pagination">
-          <li>
-            <a href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li>
-            <a href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
@@ -96,5 +72,7 @@
 <%@include file="include/footer.jsp"%>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="<%=request.getContextPath()%>/static/js/index/ie10-viewport-bug-workaround.js"></script>
+<script src="<%=request.getContextPath()%>/static/js/bootstrap-datetimepicker.min.js"></script>
+<script src="<%=request.getContextPath()%>/static/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <script src="<%=request.getContextPath()%>/static/js/my.js"></script>
 </body>

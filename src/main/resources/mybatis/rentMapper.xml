@@ -23,6 +23,17 @@
         select id,type from t_car_type;
     </select>
 
+    <select id="getOrderListCount"  resultType="int" parameterType="Map">
+        Select count(id) from t_order
+        where customer_id = #{customerId}
+        <if test="status != null">
+            and status = #{status}
+        </if>
+        <if test="startTime != null and endTime != null">
+            and start_time BETWEEN #{startTime} AND #{endTime}
+        </if>
+    </select>
+
     <select id="getOrderList" resultType="Order" parameterType="Map">
         select id,
         order_no as orderNo,
@@ -35,5 +46,17 @@
         status
         from t_order
         where customer_id = #{customerId}
+        <if test="status != null">
+            and status = #{status}
+        </if>
+        <if test="startTime != null and endTime != null">
+            and start_time BETWEEN #{startTime} AND #{endTime}
+        </if>
+        ORDER BY create_time desc
+        limit #{pageNum},#{pageCount}
+    </select>
+
+    <select id="selectSeq" parameterType="java.lang.String" statementType="CALLABLE" resultType="java.lang.String" >
+        SELECT nextval(#{VALUE}) FROM dual
     </select>
 </mapper> 

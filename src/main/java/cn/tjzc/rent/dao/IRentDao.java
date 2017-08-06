@@ -22,4 +22,6 @@ public interface IRentDao {
     public List<CarType> getCarTypeList();
 
     public List<Order> getOrderList(Map<String,Object> map);
+
+    public int getOrderListCount(Map<String,Object> map);
 }

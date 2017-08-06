@@ -27,10 +27,12 @@ var index = {
         $('#orderEndAddress').on('click',function(){
             selectAddress.init(2);
         })
+
         $('#orderTime,#orderCZTime').datetimepicker({
             language: "zh-CN",
             format: "yyyy-mm-dd hh:00",
-            autoclose: true
+            autoclose: true,
+            startDate:fecha.format(new Date(), 'YYYY-MM-DD HH:mm')
         });
         //初始化车型
         dxd.ajax({

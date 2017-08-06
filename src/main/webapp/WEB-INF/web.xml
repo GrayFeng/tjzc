@@ -31,6 +31,18 @@
 		<filter-class>cn.tjzc.common.filter.CommonFilter</filter-class>
 	</filter>
 
+	<filter>
+		<display-name>userAgentFilter</display-name>
+		<filter-name>userAgentFilter</filter-name>
+		<filter-class>cn.tjzc.common.filter.UserAgentFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>userAgentFilter</filter-name>
+		<url-pattern>*.do</url-pattern>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+
 	<filter-mapping>
 		<filter-name>utfEncodingFilter</filter-name>
 		<url-pattern>*.do</url-pattern>

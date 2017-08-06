@@ -57,7 +57,7 @@
                                 <li><a href="<%=request.getContextPath()%>/visa/index.do">签证办理</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contact">房车出游</a></li>
+                        <li><a href="<%=request.getContextPath()%>/tours/index.do">房车出游</a></li>
                         <li><a href="#contact">企业服务</a></li>
                         <li class="dropdown">
                             <a href="<%=request.getContextPath()%>/tours/index.do" class="dropdown-toggle" data-toggle="dropdown" role="button"

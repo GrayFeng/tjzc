@@ -38,7 +38,6 @@ public class LoginController {
     @NotNeedLogin
     public String login(String loginName,
                         String password,
-                        Integer type,
                         HttpServletRequest request,
                         HttpServletResponse response){
         Result result = Result.getSuccessResult();
@@ -47,8 +46,7 @@ public class LoginController {
             password = DigestUtils.md5Hex(password);
             Customer customer = customerService.getCustomerByloginName(loginName);
             if(customer != null
-                    && password.equals(customer.getPassword())
-                    && customer.getType() == type){
+                    && password.equals(customer.getPassword())){
                 if(StringUtils.isNotEmpty(customer.getDisplayName())){
                     try {
                         loginName = URLEncoder.encode(customer.getDisplayName(), "utf-8");
