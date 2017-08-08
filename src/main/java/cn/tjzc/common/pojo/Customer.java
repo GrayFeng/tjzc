@@ -26,6 +26,16 @@ public class Customer implements Serializable{
 	private String contact;
 	//状态 0-有效 1-无效
 	private String status;
+	//短信验证码
+	private String validateCode;
+
+	public String getValidateCode() {
+		return validateCode;
+	}
+
+	public void setValidateCode(String validateCode) {
+		this.validateCode = validateCode;
+	}
 
 	public String getId() {
 		return id;
