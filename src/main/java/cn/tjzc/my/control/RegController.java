@@ -61,9 +61,9 @@ public class RegController {
         Result result = Result.getSuccessResult();
         if(StringUtils.isNotEmpty(mobile)){
             String code = RandomStringUtils.random(4,true,true);
-            request.getSession().setAttribute("regValidateCode",code);
-            String bizId = SmsUtils.send(mobile,"{ \"code\":\"" + code + "\"}","SMS_82240241");
-            result.setRe(bizId);
+            request.getSession().setAttribute("regValidateCode", code);
+//            String bizId = SmsUtils.send(mobile,"{ \"code\":\"" + code + "\"}","SMS_82240241");
+            result.setRe(code);
         }
         return result.toJSONString();
     }

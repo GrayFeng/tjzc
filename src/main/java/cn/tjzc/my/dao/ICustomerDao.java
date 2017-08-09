@@ -14,4 +14,6 @@ public interface ICustomerDao {
     public void addCustomer(Customer customer);
 
     public Customer getCustomerByloginName(String loginName);
+
+    public void updateCustomer(Customer customer);
 }

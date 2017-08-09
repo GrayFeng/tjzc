@@ -69,6 +69,18 @@ public class LoginController {
     }
 
 
+    @RequestMapping("/api/logout")
+    @ResponseBody
+    public String logout1(HttpServletRequest request,
+                         HttpServletResponse response){
+        request.getSession().removeAttribute("customer");
+        Cookie cookie = new Cookie("loginName",null);
+        cookie.setPath("/");
+        cookie.setMaxAge(0);
+        response.addCookie(cookie);
+        return Result.getSuccessResult().toJSONString();
+    }
+
     @RequestMapping("/logout")
     public String logout(HttpServletRequest request,
                          HttpServletResponse response){

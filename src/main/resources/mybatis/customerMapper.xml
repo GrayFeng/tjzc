@@ -22,8 +22,14 @@
         password,
         contact_mobile as contactMobile,
         contact,
+        tax_id as taxId,
+        id_number as idNumber,
         type
         from t_customer
         where login_name = #{loginName} and status = 0 limit 0,1;
     </select>
+
+    <update id="updateCustomer" parameterType="Customer">
+        update t_customer set password=#{password}, contact_mobile=#{contactMobile},contact=#{contact} where id = #{id};
+    </update>
 </mapper> 
