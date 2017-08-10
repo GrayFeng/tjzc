@@ -35,9 +35,10 @@
 }
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-    color: #fff;
-    background-color: #33cc00;
+    color: #555;
+    background-color: #fff;
     border-color: #e0dfdf;
+    border-left: 3px #33cc00 solid;
     font-weight: bold;
 }
 
@@ -45,9 +46,10 @@ a.list-group-item:hover,
 button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
-    color: #fff;
-    background-color: #33cc00;
+    color: #555;
+    background-color: #fff;
     border-color: #e0dfdf;
+    border-left: 3px #33cc00 solid;
     font-weight: bold;
 }
 

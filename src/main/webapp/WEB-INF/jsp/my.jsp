@@ -19,7 +19,7 @@
 <%@include file="include/nav.jsp" %>
 <div class="my-center-box">
   <div class="container">
-    <div class="col-lg-4 my-center-menu">
+    <div class="col-sm-4 my-center-menu">
       <div class="list-group">
         <a href="#" class="list-group-item active">
           我的订单
@@ -28,7 +28,7 @@
         <a href="#" class="list-group-item">修改密码</a>
       </div>
     </div>
-    <div class="col-lg-8 my-center-content">
+    <div class="col-sm-8 my-center-content">
       <div class="search-box">
         <div class="search-form">
           <input type="email" id="startTime" class="form-control" placeholder="起始时间" required>

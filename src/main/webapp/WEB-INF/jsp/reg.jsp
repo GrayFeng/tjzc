@@ -37,6 +37,13 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="inputTel" class="col-sm-2 control-label">验证码:</label>
+                    <div class="col-sm-8">
+                        <input type="text" id="vCode"  class="form-control" placeholder="请输入验证码">
+                    </div>
+                    <button type="button" id="vCodebtn" class="col-sm-2 btn btn-success">发送验证码</button>
+                </div>
+                <div class="form-group">
                     <label for="inputPassword" class="col-sm-2 control-label">密码:</label>
 
                     <div class="col-sm-10">
@@ -124,6 +131,13 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="inputTel" class="col-sm-2 control-label">验证码:</label>
+                    <div class="col-sm-8">
+                        <input type="text" id="cVCode" class="form-control" placeholder="请输入验证码">
+                    </div>
+                    <button type="button" id="cVCodebtn" class="col-sm-2 btn btn-success">发送验证码</button>
+                </div>
+                <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button id="companyRegBtn" type="button" class="btn btn-lg btn-success">注册</button>
                     </div>
@@ -153,6 +167,7 @@
         regInfo.displayName=$('#inputName').val();
         regInfo.password=$('#inputPassword').val();
         regInfo.idNumber=$('#inputIdNum').val();
+        regInfo.validateCode =$('#vCode').val();
         regInfo.type = 0;
         reg(regInfo);
 
@@ -166,9 +181,66 @@
         regInfo.taxId=$('#inputSH').val();
         regInfo.contact=$('#inputLXR').val();
         regInfo.contactMobile=$('#inputLXDH').val();
+        regInfo.validateCode =$('#cVCode').val();
         regInfo.type = 1;
         reg(regInfo);
     });
+
+    $('#vCodebtn').on('click',function(){
+        send(0);
+    });
+
+    $('#cVCodebtn').on('click',function(){
+        send(1);
+    });
+
+
+    var sendIng = false;
+    function send(type){
+        var $btn = $('#vCodebtn');
+        var mobile = $('#inputTel').val();
+        if(type == 1){
+            $btn = $('#cVCodebtn');
+            mobile = $('#inputLXDH').val();
+        }
+        if(!mobile){
+            dxd.alert('请先输入手机号');
+            return;
+        }
+        if(sendIng){
+            return;
+        }
+        dxd.ajax({
+            url : contextPath + '/api/reg/sendValidateCode.do',
+            data: {mobile:mobile},
+            success:function(data){
+                if(data && data.re){
+                    $btn.html('已发送(60)');
+                    $btn.removeClass('btn-success');
+                    $btn.addClass('btn-default');
+                    var count = 60;
+                    sendIng = true;
+                    function countFn(){
+                        setTimeout(function(){
+                            count -= 1;
+                            if(count == 0){
+                                $btn.html('发送验证码');
+                                $btn.removeClass('btn-default');
+                                $btn.addClass('btn-success');
+                                sendIng = false;
+                            }else{
+                                $btn.html('已发送('+count+')');
+                                countFn();
+                            }
+                        },1000)
+                    }
+                    countFn();
+                }else{
+                    dxd.alert(data.msg);
+                }
+            }
+        })
+    }
 
 
     function reg(regInfo){

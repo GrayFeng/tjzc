@@ -35,22 +35,22 @@ var index = {
             startDate:fecha.format(new Date(), 'YYYY-MM-DD HH:mm')
         });
         //初始化车型
-        dxd.ajax({
-           url: contextPath + "/api/rent/getCarTypeList.do",
-           success:function(data){
-               if(data && data.re){
-                   var carTypeList = $('#orderVehicle');
-                   var carTypeList1 = $('#orderCZVehicle');
-                   carTypeList.html('');
-                   carTypeList1.html('');
-                   $.each(data.re,function(i,carType){
-                      var option = '<option value="'+carType.type+'">'+carType.type+'</option>';
-                       carTypeList.append(option);
-                       carTypeList1.append(option);
-                   });
-               }
-           }
-        });
+        //dxd.ajax({
+        //   url: contextPath + "/api/rent/getCarTypeList.do",
+        //   success:function(data){
+        //       if(data && data.re){
+        //           var carTypeList = $('#orderVehicle');
+        //           var carTypeList1 = $('#orderCZVehicle');
+        //           carTypeList.html('');
+        //           carTypeList1.html('');
+        //           $.each(data.re,function(i,carType){
+        //              var option = '<option value="'+carType.type+'">'+carType.type+'</option>';
+        //               carTypeList.append(option);
+        //               carTypeList1.append(option);
+        //           });
+        //       }
+        //   }
+        //});
 
         $('#rentBtn').on('click',function(){
             var orderInfo = {};

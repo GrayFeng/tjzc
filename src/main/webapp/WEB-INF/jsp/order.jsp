@@ -44,9 +44,10 @@
                 <div class="order-item">
                     <label class="order-item-label">选择车型</label>
                     <select class="form-control order-item-input" id="orderVehicle">
-                        <option value="0">宝马5系</option>
-                        <option value="1">凯越</option>
-                        <option value="2">GL8</option>
+                        <option value="0">公务型</option>
+                        <option value="1">商务型</option>
+                        <option value="2">豪华型</option>
+                        <option value="3">其他</option>
                     </select>
                 </div>
                 </div>

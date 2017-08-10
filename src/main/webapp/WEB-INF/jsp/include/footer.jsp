@@ -65,14 +65,14 @@
       <dl>
         <dd>
           <a href="#" class="thumbnail">
-            <img src="<%=request.getContextPath()%>/static/image/footer-qrcode.png">
+            <img src="<%=request.getContextPath()%>/static/image/footer-qrcode.jpg">
           </a>
         </dd>
       </dl>
       <dl>
         <dd>
           <a href="#" class="thumbnail">
-            <img src="<%=request.getContextPath()%>/static/image/footer-qrcode.png">
+            <img src="<%=request.getContextPath()%>/static/image/footer-qrcode.jpg">
           </a>
         </dd>
       </dl>
