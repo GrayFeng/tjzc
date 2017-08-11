@@ -65,7 +65,7 @@ footer{
 /* Always apply the floated nav */
 .navbar-nav {
     float: none;
-    margin: 0 0 0 260px;
+    margin: 0 0 0 20%;
 }
 .navbar-nav > li {
     float: left;

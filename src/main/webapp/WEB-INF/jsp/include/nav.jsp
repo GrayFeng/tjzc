@@ -32,7 +32,8 @@
                     <li class="nav-tel-number"><a href="#">400-000-0000</a></li>
                 </ul>
             </div>
-            <div class="navbar-box">
+            <div style="background-color: #33cc00;">
+            <div class="container navbar-box">
             <div class="container navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath()%>/">首页</a></li>
@@ -70,5 +71,6 @@
                     </ul>
                 </div>
                 </div>
+            </div>
         </nav>
 </div>

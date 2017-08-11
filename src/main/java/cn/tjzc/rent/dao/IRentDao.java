@@ -24,4 +24,6 @@ public interface IRentDao {
     public List<Order> getOrderList(Map<String,Object> map);
 
     public int getOrderListCount(Map<String,Object> map);
+
+    public String selectSeq(String name);
 }

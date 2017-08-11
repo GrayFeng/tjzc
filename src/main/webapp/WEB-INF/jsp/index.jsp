@@ -154,7 +154,6 @@
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="<%=request.getContextPath()%>/static/js/bootstrap-datetimepicker.min.js"></script>
 <script src="<%=request.getContextPath()%>/static/js/bootstrap-datetimepicker.zh-CN.js"></script>
-<script src="static/js/index/holder.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="static/js/index/ie10-viewport-bug-workaround.js"></script>
 <script src="<%=request.getContextPath()%>/static/js/index/index.js"></script>

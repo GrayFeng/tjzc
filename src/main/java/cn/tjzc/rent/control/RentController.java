@@ -55,7 +55,12 @@ public class RentController {
             }else{
                 order.setCustomerMobile(customer.getContactMobile());
             }
-            order.setOrderNo(System.currentTimeMillis() + "");
+            String orderSeq = rentDao.selectSeq("seq_order_no");
+            int length = 8-orderSeq.length();
+            for(int i = 0 ;i < length;i++){
+                orderSeq = "0" + orderSeq;
+            }
+            order.setOrderNo("NO" + orderSeq);
             rentDao.addOrder(order);
             result.setRe(order.getId());
         }

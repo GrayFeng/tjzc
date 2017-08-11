@@ -10,12 +10,12 @@
         type,
         seq,
         status,
-        url,
+        concat('http://60.205.230.172/',url) as url,
         remark
         from t_picture
         where
         status = 0
         and type = #{type}
-        ORDER BY seq desc
+        ORDER BY seq
     </select>
 </mapper> 

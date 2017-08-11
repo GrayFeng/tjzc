@@ -32,7 +32,7 @@ var index = {
             language: "zh-CN",
             format: "yyyy-mm-dd hh:00",
             autoclose: true,
-            startDate:fecha.format(new Date(), 'YYYY-MM-DD HH:mm')
+            startDate:new Date()
         });
         //初始化车型
         //dxd.ajax({
@@ -104,7 +104,9 @@ var index = {
            url: contextPath + '/api/rent/addOrder.do',
             data: orderInfo,
             success: function(data){
-                dxd.alert(data);
+                if(data && data.status == "200" && data.re){
+                    dxd.alert("预定成功");
+                }
             }
         });
     }

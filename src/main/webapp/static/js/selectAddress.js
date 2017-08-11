@@ -82,7 +82,7 @@ var selectAddress = function(){
 
     function bindEvent(){
 
-        $("#keyword").on("input",function(){
+        $("#keyword").on("keydown",function(){
             window.clearTimeout(keywordInput);
             keywordInput = setTimeout(function(){
                 var keyword = $("#keyword").val();

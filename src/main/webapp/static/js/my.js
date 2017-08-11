@@ -6,7 +6,7 @@
 var my = {
     orderStatus:['','等待处理','预约完成','订单完成','订单取消','订单终结'],
     orderType:['','日租包车','机场接送','车站接送','月租包车','企业包车'],
-    pageCount:2,
+    pageCount:10,
     pageNum:1,
     status:0,
     bindEvent: function() {

@@ -2,8 +2,10 @@
     background-color:#f2f3f5;
     padding: 30px 0px 50px 0px;
 }
+
 .my-center-menu{
-     width: 260px;
+    display:inline-block;
+     width: 20%;
      margin-right: 10px;
      min-height: 400px;
      padding: 0;
@@ -12,9 +14,6 @@
      -moz-box-shadow: 0 0 5px rgba(228, 230, 233, 1);
      box-shadow: 0 0 5px rgba(228, 230, 233, 1)
  }
-.my-center-menu .list-group{
-    width: 260px;
-}
 
 
 .my-center-menu .list-group-item {
@@ -54,7 +53,9 @@ button.list-group-item:focus {
 }
 
 .my-center-content{
-    width: 930px;
+    display: inline-block;
+    float: right;
+    width: 78%;
     min-height: 400px;
     background-color: #fff;
     padding: 30px;

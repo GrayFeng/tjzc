@@ -180,18 +180,18 @@
     padding-left: 5px;
     padding-right: 5px;
     height: 400px;
-    width: 590px;
+    width: 580px;
   }
 
   .hot-car-box .col-md-6 img{
      height: 198px;
-     width: 288px;
+     width: 282px;
    }
 
   .hot-car-box .col-md-6 span{
     display: inline-block;
     background-color: #ccc;
     height: 198px;
-    width: 288px;
+    width: 282px;
     margin-bottom: 5px;
   }
