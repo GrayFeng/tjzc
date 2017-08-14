@@ -121,22 +121,34 @@
 
     <div class="row featurette hot-car-box">
         <div class="col-md-3">
-            <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
+            <a href="<%=request.getContextPath()%>/rent/index.do">
+                <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
                  alt="Generic placeholder image">
+            </a>
         </div>
         <div class="col-md-6">
             <div>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-01.jpg"></span>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-02.jpg"></span>
+                <a href="<%=request.getContextPath()%>/tours/index.do">
+                    <span><img src="<%=request.getContextPath()%>/static/image/hot-01.jpg"></span>
+                </a>
+                <a href="<%=request.getContextPath()%>/tours/index.do#business">
+                    <span><img src="<%=request.getContextPath()%>/static/image/hot-02.jpg"></span>
+                </a>
             </div>
             <div>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-03.jpg"></span>
-                <span><img src="<%=request.getContextPath()%>/static/image/hot-04.jpg"></span>
+                <a href="<%=request.getContextPath()%>/tours/index.do#abroad">
+                    <span><img src="<%=request.getContextPath()%>/static/image/hot-03.jpg"></span>
+                </a>
+                <a href="<%=request.getContextPath()%>/visa/index.do">
+                    <span><img src="<%=request.getContextPath()%>/static/image/hot-04.jpg"></span>
+                </a>
             </div>
         </div>
         <div class="col-md-3">
-            <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
-                 alt="Generic placeholder image">
+            <a href="<%=request.getContextPath()%>/rv/index.do">
+                <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
+                     alt="Generic placeholder image">
+            </a>
         </div>
     </div>
 

@@ -37,6 +37,31 @@ public class MyController {
         return "my";
     }
 
+    @RequestMapping("/my/memberInfo")
+    public String memberInfo(){
+        return "memberInfo";
+    }
+
+    @RequestMapping("/my/modifyPwd")
+    public String modifyPwd(){
+        return "modifyPwd";
+    }
+
+    @RequestMapping("/aboutus")
+    public String aboutus(){
+        return "aboutus";
+    }
+
+    @RequestMapping("/contactus")
+     public String contactus(){
+        return "contactus";
+    }
+
+    @RequestMapping("/help")
+    public String help(){
+        return "help";
+    }
+
 
     @RequestMapping("/api/my/updateMemberInfo")
     @ResponseBody

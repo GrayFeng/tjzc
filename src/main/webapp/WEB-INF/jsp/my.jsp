@@ -21,11 +21,11 @@
   <div class="container">
     <div class="my-center-menu">
       <div class="list-group">
-        <a href="#" class="list-group-item active">
+        <a href="<%=request.getContextPath()%>/my/index.do" class="list-group-item active">
           我的订单
         </a>
-        <a href="#" class="list-group-item">我的信息</a>
-        <a href="#" class="list-group-item">修改密码</a>
+        <a href="<%=request.getContextPath()%>/my/memberInfo.do" class="list-group-item">我的信息</a>
+        <a href="<%=request.getContextPath()%>/my/modifyPwd.do" class="list-group-item">修改密码</a>
       </div>
     </div>
     <div class="my-center-content">

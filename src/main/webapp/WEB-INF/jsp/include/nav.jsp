@@ -53,19 +53,20 @@
                                aria-haspopup="true" aria-expanded="false">定制旅行</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<%=request.getContextPath()%>/tours/index.do">国内旅游</a></li>
-                                <li><a href="<%=request.getContextPath()%>/tours/index.do">出境旅游</a></li>
-                                <li><a href="<%=request.getContextPath()%>/tours/index.do">商务旅游</a></li>
+                                <li><a href="<%=request.getContextPath()%>/tours/index.do#abroad">出境旅游</a></li>
+                                <li><a href="<%=request.getContextPath()%>/tours/index.do#business">商务旅游</a></li>
                                 <li><a href="<%=request.getContextPath()%>/visa/index.do">签证办理</a></li>
                             </ul>
                         </li>
-                        <li><a href="<%=request.getContextPath()%>/tours/index.do">房车出游</a></li>
-                        <li><a href="#contact">企业服务</a></li>
+                        <li><a href="<%=request.getContextPath()%>/rv/index.do">房车出游</a></li>
+                        <li><a href="<%=request.getContextPath()%>/company/index.do">企业服务</a></li>
                         <li class="dropdown">
                             <a href="<%=request.getContextPath()%>/tours/index.do" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false">关于我们</a>
                             <ul class="dropdown-menu">
-                                <li><a href="<%=request.getContextPath()%>/tours/index.do">联系我们</a></li>
-                                <li><a href="<%=request.getContextPath()%>/tours/index.do">帮助中心</a></li>
+                                <li><a href="<%=request.getContextPath()%>/aboutus.do">企业简介</a></li>
+                                <li><a href="<%=request.getContextPath()%>/contactus.do">联系我们</a></li>
+                                <li><a href="<%=request.getContextPath()%>/help.do">帮助中心</a></li>
                             </ul>
                         </li>
                     </ul>

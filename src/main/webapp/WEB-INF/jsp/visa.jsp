@@ -33,70 +33,7 @@
     <h3>热门国家</h3>
 
     <div class="row visa-hot-country">
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-usa.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>美国签证</h4>
-            </div>
-        </div>
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-tg.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>泰国签证</h4>
-            </div>
-        </div>
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-fg.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>法国签证</h4>
-            </div>
-        </div>
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-az.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>澳大利亚签证</h4>
-            </div>
-        </div>
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-jp.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>日本签证</h4>
-            </div>
-        </div>
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-yg.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>英国签证</h4>
-            </div>
-        </div>
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-flb.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>菲律宾签证</h4>
-            </div>
-        </div>
-        <div class="col-xs-3 col-md-3">
-            <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/visa/hot-ml.jpg"/>
-            </a>
-            <div class="caption">
-                <h4>马来西亚签证</h4>
-            </div>
-        </div>
+
 
     </div>
 
@@ -104,18 +41,29 @@
 <!-- /.container -->
 
 <%@include file="include/footer.jsp" %>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../dist/js/bootstrap.min.js"></script>-->
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="static/js/index/holder.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="static/js/index/ie10-viewport-bug-workaround.js"></script>
-
-<script src="static/js/index/index.js"></script>
+<script type="text/javascript">
+    dxd.ajax({
+        url: contextPath + '/api/tours/getPicList.do',
+        data: {
+            type:4
+        },
+        success: function(data){
+            if(data && data.status == "200"
+                    && data.re
+                    && data.re.length > 0){
+                $.each(data.re,function(i,obj){
+                    var html = $('.visa-hot-country').html();
+                        html += '<div class="col-xs-3 col-md-3">';
+                        html+='<a href="#" class="thumbnail">';
+                        html+='<img alt="100%x180" src="'+obj.url+'"/>';
+                        html+='</a><div class="caption"><h4>'+obj.name+'</h4></div></div>';
+                    console.info(html)
+                    $('.visa-hot-country').html(html);
+                });
+            }
+        }
+    });
+</script>
 
 </body>
 </html>

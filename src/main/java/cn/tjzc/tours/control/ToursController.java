@@ -9,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
 import java.util.List;
 
 /**
@@ -21,8 +23,23 @@ public class ToursController {
     private IPictureDao pictureDao;
 
     @RequestMapping("/tours/index")
-    public String index(){
-        return "tours";
+    public ModelAndView index(){
+        ModelAndView mav = new ModelAndView("tours");
+        List<Picture> domesticList = pictureDao.getPictureList(1);
+        if(domesticList != null && domesticList.size() > 0){
+            mav.addObject("domesticList",domesticList);
+        }
+
+        List<Picture> abroadList = pictureDao.getPictureList(2);
+        if(abroadList != null && abroadList.size() > 0){
+            mav.addObject("abroadList",abroadList);
+        }
+
+        List<Picture> businessList = pictureDao.getPictureList(3);
+        if(businessList != null && businessList.size() > 0){
+            mav.addObject("businessList",businessList);
+        }
+        return mav;
     }
 
 

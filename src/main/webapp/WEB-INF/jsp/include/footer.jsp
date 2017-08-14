@@ -47,19 +47,25 @@
       <dl>
         <dt>用户指南</dt>
         <dd>
-          <a>用户注册</a><a>提交订单</a><a>修改密码</a>
+          <a href="<%=request.getContextPath()%>/reg.do">用户注册</a>
+          <a href="<%=request.getContextPath()%>/help.do">提交订单</a>
+          <a href="<%=request.getContextPath()%>/help.do">修改密码</a>
         </dd>
       </dl>
       <dl>
         <dt>帮助中心</dt>
         <dd>
-          <a>修改订单</a><a>取消订单</a><a>联系我们</a>
+          <a href="<%=request.getContextPath()%>/contactus.do">修改订单</a>
+          <a href="<%=request.getContextPath()%>/contactus.do">取消订单</a>
+          <a href="<%=request.getContextPath()%>/contactus.do">联系我们</a>
         </dd>
       </dl>
       <dl>
         <dt>我的中心</dt>
         <dd>
-          <a>订单查询</a><a>信息修改</a><a>用车须知</a>
+          <a href="<%=request.getContextPath()%>/help.do">订单查询</a>
+          <a href="<%=request.getContextPath()%>/help.do">信息修改</a>
+          <a href="<%=request.getContextPath()%>/contactus.do">用车须知</a>
         </dd>
       </dl>
       <dl>

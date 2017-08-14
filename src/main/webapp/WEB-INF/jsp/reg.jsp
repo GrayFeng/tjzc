@@ -71,6 +71,11 @@
                         <input type="text" class="form-control" id="inputIdNum" placeholder="请输入身份证号码">
                     </div>
                 </div>
+                <div class="checkbox" style="text-align: center;margin-bottom: 20px; width: 53%">
+                    <label>
+                        <input type="checkbox" id="memberRule"> <a target="_blank" href="<%=request.getContextPath()%>/memberRule.do">《大行道会员注册协议》</a>
+                    </label>
+                </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button id="personRegBtn" type="button" class="btn btn-lg btn-success">注册</button>
@@ -136,6 +141,11 @@
                         <input type="text" id="cVCode" class="form-control" placeholder="请输入验证码">
                     </div>
                     <button type="button" id="cVCodebtn" class="col-sm-2 btn btn-success">发送验证码</button>
+                </div>
+                <div class="checkbox" style="text-align: center;margin-bottom: 20px; width: 53%">
+                    <label>
+                        <input type="checkbox" id="companyMemberRule"> <a target="_blank" href="<%=request.getContextPath()%>/memberRule.do">《大行道会员注册协议》</a>
+                    </label>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">

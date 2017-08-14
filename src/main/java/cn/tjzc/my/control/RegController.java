@@ -25,8 +25,13 @@ public class RegController {
     private ICustomerService customerService;
 
     @RequestMapping("reg")
-    public String login(){
+     public String login(){
         return "reg";
+    }
+
+    @RequestMapping("memberRule")
+    public String memberRule(){
+        return "memberRule";
     }
 
     @RequestMapping("/api/reg/add")
