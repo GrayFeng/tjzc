@@ -18,7 +18,9 @@
 <%@include file="include/nav.jsp" %>
 
 <div class="container login-box">
-
+  <div class="login-banner">
+      <img src="<%=request.getContextPath()%>/static/image/login1.jpg">
+  </div>
   <div class="form-signin">
     <div class="login-tab-box">
       <h2 class="form-signin-heading active person">个人</h2>

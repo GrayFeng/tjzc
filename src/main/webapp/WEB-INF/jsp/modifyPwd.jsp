@@ -26,6 +26,7 @@
         </a>
         <a href="<%=request.getContextPath()%>/my/memberInfo.do" class="list-group-item">我的信息</a>
         <a href="<%=request.getContextPath()%>/my/modifyPwd.do" class="list-group-item active">修改密码</a>
+        <a href="<%=request.getContextPath()%>/my/rentRule.do" class="list-group-item">服务协议</a>
       </div>
     </div>
     <div class="my-center-content">

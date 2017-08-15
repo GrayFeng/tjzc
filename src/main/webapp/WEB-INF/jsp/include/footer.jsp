@@ -77,9 +77,8 @@
       </dl>
       <dl>
         <dd>
-          <a href="#" class="thumbnail">
-            <img src="<%=request.getContextPath()%>/static/image/footer-qrcode.jpg">
-          </a>
+          <br> QQ:<br>11111111<br><br>
+          联系电话:<br>4000000000
         </dd>
       </dl>
       </div>

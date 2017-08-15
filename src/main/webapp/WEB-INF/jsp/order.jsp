@@ -38,16 +38,16 @@
                                                                        placeholder="请选择出发地点">
                 </div>
                 <div class="order-item">
-                    <label class="order-item-label">出发地点</label><input id="orderEndAddress" readonly="readonly" class="order-item-input form-control" type="text"
+                    <label class="order-item-label">送达地点</label><input id="orderEndAddress" readonly="readonly" class="order-item-input form-control" type="text"
                                                                        placeholder="请选择送达地点">
                 </div>
                 <div class="order-item">
                     <label class="order-item-label">选择车型</label>
                     <select class="form-control order-item-input" id="orderVehicle">
-                        <option value="0">公务型</option>
-                        <option value="1">商务型</option>
-                        <option value="2">豪华型</option>
-                        <option value="3">其他</option>
+                        <option value="公务型">公务型</option>
+                        <option value="商务型">商务型</option>
+                        <option value="豪华型">豪华型</option>
+                        <option value="其他">其他</option>
                     </select>
                 </div>
                 </div>
@@ -115,9 +115,10 @@
                 <div class="order-item" style="margin-top: 30px;">
                     <label class="order-item-label">选择车型</label>
                     <select class="form-control order-item-input" id="orderCZVehicle">
-                        <option value="0">宝马5系</option>
-                        <option value="1">凯越</option>
-                        <option value="2">GL8</option>
+                        <option value="公务型">公务型</option>
+                        <option value="商务型">商务型</option>
+                        <option value="豪华型">豪华型</option>
+                        <option value="其他">其他</option>
                     </select>
                 </div>
                 <div class="order-item" style="margin-top: 30px;margin-bottom: 30px;">

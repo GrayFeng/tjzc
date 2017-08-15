@@ -93,7 +93,7 @@ var my = {
         my.getList();
     },
     pageNav:function(pageNum,pageCount,totalCount){
-        var totalPage = totalCount / pageCount;
+        var totalPage = parseInt(totalCount / pageCount);
         if(totalCount % pageCount > 0){
             totalPage += 1;
         }

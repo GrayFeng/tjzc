@@ -31,17 +31,33 @@ var login = {
         })
 
         $('#loginBtn').on('click',function(){
+            var validate = true;
             var tel = $('#inputTel').val();
             var email = $('#inputEmail').val();
             var password = $('#inputPassword').val();
             var loginInfo = {};
             if(loginType == 0){
                 loginInfo.loginName = tel;
+                if(!loginInfo.loginName){
+                    $('#inputTel').validateNotify('请输入手机号');
+                    validate = false
+                }
             }else{
                 loginInfo.loginName = email;
+                if(!loginInfo.loginName){
+                    $('#inputEmail').validateNotify('请输入邮箱');
+                    validate = false
+                }
             }
             loginInfo.type = loginType;
             loginInfo.password = password;
+            if(!loginInfo.password){
+                $('#inputPassword').validateNotify('请输入密码');
+                validate = false
+            }
+            if(!validate){
+                return;
+            }
             dxd.ajax({
                 url : contextPath + '/api/login.do',
                 data: loginInfo,

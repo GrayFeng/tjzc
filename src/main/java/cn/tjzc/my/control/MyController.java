@@ -47,6 +47,11 @@ public class MyController {
         return "modifyPwd";
     }
 
+    @RequestMapping("/my/rentRule")
+    public String rentRule(){
+        return "rentRule";
+    }
+
     @RequestMapping("/aboutus")
     public String aboutus(){
         return "aboutus";

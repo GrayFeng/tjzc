@@ -54,6 +54,7 @@ var index = {
 
         $('#rentBtn').on('click',function(){
             var orderInfo = {};
+            var validate = true;
             if(document.cookie.indexOf('loginName') == -1){
                 dxd.alert('请先登录');
                 return;
@@ -66,6 +67,18 @@ var index = {
                 orderInfo.endAddress = $('#orderEndAddress').val();
                 orderInfo.customerCarType = $('#orderVehicle').val();
                 orderInfo.tenancy = $('input[name="type-radio"]:checked').val();
+                if(!orderInfo.startTime){
+                    $('#orderTime').validateNotify('请选择用车时间');
+                    validate = false
+                }
+                if(!orderInfo.startAddress){
+                    $('#orderStartAddress').validateNotify('请选择出发地点');
+                    validate = false
+                }
+                if(!orderInfo.endAddress){
+                    $('#orderEndAddress').validateNotify('请选择送达地点');
+                    validate = false
+                }
             }else if(index.tabFlag == 'jcjs'){
                 orderInfo.type = '2';
                 orderInfo.startTime = $('#orderTime').val();
@@ -75,6 +88,22 @@ var index = {
                 orderInfo.flightTrain = $('#orderFlightNumbe').val();
                 orderInfo.fetchSend = $('input[name="fetchSend-fly-type-radio"]:checked').val();
                 orderInfo.single = $('input[name="single-fly-type-radio"]:checked').val();
+                if(!orderInfo.startTime){
+                    $('#orderTime').validateNotify('请选择用车时间');
+                    validate = false
+                }
+                if(!orderInfo.startAddress){
+                    $('#orderStartAddress').validateNotify('请选择出发地点');
+                    validate = false
+                }
+                if(!orderInfo.endAddress){
+                    $('#orderEndAddress').validateNotify('请选择送达地点');
+                    validate = false
+                }
+                if(!orderInfo.flightTrain){
+                    $('#orderFlightNumbe').validateNotify('请输入航班号');
+                    validate = false
+                }
             }else if(index.tabFlag == 'czjs'){
                 orderInfo.type = '3';
                 orderInfo.startTime = $('#orderTime').val();
@@ -84,18 +113,50 @@ var index = {
                 orderInfo.flightTrain = $('#orderTrainNumbe').val();
                 orderInfo.fetchSend = $('input[name="fetchSend-type-radio"]:checked').val();
                 orderInfo.single = $('input[name="single-type-radio"]:checked').val();
+                if(!orderInfo.startTime){
+                    $('#orderTime').validateNotify('请选择用车时间');
+                    validate = false
+                }
+                if(!orderInfo.startAddress){
+                    $('#orderStartAddress').validateNotify('请选择出发地点');
+                    validate = false
+                }
+                if(!orderInfo.endAddress){
+                    $('#orderEndAddress').validateNotify('请选择送达地点');
+                    validate = false
+                }
+                if(!orderInfo.flightTrain){
+                    $('#orderTrainNumbe').validateNotify('请输入车次');
+                    validate = false
+                }
             }else if(index.tabFlag == 'czdz'){
                 orderInfo.type = '4';
                 orderInfo.startTime = $('#orderCZTime').val();
                 orderInfo.customerCarType = $('#orderCZVehicle').val();
                 orderInfo.tenancy = $('#orderZQ').val();
+                if(!orderInfo.startTime){
+                    $('#orderCZTime').validateNotify('请选择用车时间');
+                    validate = false
+                }
             }else if(index.tabFlag == 'qybc'){
                 orderInfo.type = '5';
-                orderInfo.remark = $('#orderQYBCVehicle').val();
-                orderInfo.customerCarType = $('#orderQYBCOther').val();
+                orderInfo.customerCarType = $('#orderQYBCVehicle').val();
+                orderInfo.remark = $('#orderQYBCOther').val();
                 orderInfo.tenancy = $('#orderQYBCZQ').val();
+                if(!orderInfo.customerCarType){
+                    $('#orderQYBCVehicle').validateNotify('请输入车型');
+                    validate = false
+                }
             }
             console.info(orderInfo);
+            if(orderInfo.startTime
+                && orderInfo.startTime < dxd.getNowDateTime()){
+                $('#orderTime').validateNotify('请选择一个有效时间');
+                validate = false
+            }
+            if(!validate){
+                return;
+            }
             index.addOrder(orderInfo);
         });
     },

@@ -172,27 +172,111 @@
 <script>
 
     $('#personRegBtn').on('click',function(){
+        var validate = true;
         var regInfo = {};
         regInfo.loginName=$('#inputTel').val();
         regInfo.displayName=$('#inputName').val();
         regInfo.password=$('#inputPassword').val();
         regInfo.idNumber=$('#inputIdNum').val();
         regInfo.validateCode =$('#vCode').val();
+        if(!regInfo.loginName){
+            $('#inputTel').validateNotify('请输入手机号');
+            validate = false
+        }else if(!dxd.myValidata.isMobile(regInfo.loginName)){
+            $('#inputTel').validateNotify('手机号格式不正确');
+            validate = false
+        }
+        if(!regInfo.displayName){
+            $('#inputName').validateNotify('请输入姓名');
+            validate = false
+        }
+        if(!regInfo.password){
+            $('#inputPassword').validateNotify('请输入密码');
+            validate = false
+        }
+        if(regInfo.password != $('#inputPassword1').val()){
+            $('#inputPassword1').validateNotify('两次密码不一致');
+            validate = false
+        }
+        if(!regInfo.idNumber){
+            $('#inputIdNum').validateNotify('请输入身份证号');
+            validate = false
+        }else if(!dxd.myValidata.checkIDCard(regInfo.idNumber)){
+            $('#inputIdNum').validateNotify('身份证格式不正确');
+            validate = false
+        }
+        if(!regInfo.validateCode){
+            $('#vCode').validateNotify('请输入验证码');
+            validate = false
+        }
         regInfo.type = 0;
+        if(!validate){
+            return;
+        }
+        if(!$('#memberRule').prop('checked')){
+            dxd.alert('请勾选会员协议');
+            return;
+        }
         reg(regInfo);
 
     });
 
     $('#companyRegBtn').on('click',function(){
         var regInfo = {};
+        var validate = true;
         regInfo.loginName=$('#inputEmail').val();
         regInfo.displayName=$('#inputCompanyName').val();
-        regInfo.password=$('#inputPassword').val();
+        regInfo.password=$('#inputPassword2').val();
         regInfo.taxId=$('#inputSH').val();
         regInfo.contact=$('#inputLXR').val();
         regInfo.contactMobile=$('#inputLXDH').val();
         regInfo.validateCode =$('#cVCode').val();
         regInfo.type = 1;
+        if(!regInfo.loginName){
+            $('#inputEmail').validateNotify('请输入邮箱');
+            validate = false
+        }else if(!dxd.myValidata.isEmail(regInfo.loginName)){
+            $('#inputEmail').validateNotify('邮箱格式不正确');
+            validate = false
+        }
+        if(!regInfo.displayName){
+            $('#inputCompanyName').validateNotify('请输入企业名称');
+            validate = false
+        }
+        if(!regInfo.password){
+            $('#inputPassword2').validateNotify('请输入密码');
+            validate = false
+        }
+        if(regInfo.password != $('#inputPassword3').val()){
+            $('#inputPassword3').validateNotify('两次密码不一致');
+            validate = false
+        }
+        if(!regInfo.taxId){
+            $('#inputSH').validateNotify('请输入税号');
+            validate = false
+        }
+        if(!regInfo.contact){
+            $('#inputLXR').validateNotify('请输入联系人');
+            validate = false
+        }
+        if(!regInfo.contactMobile){
+            $('#inputLXDH').validateNotify('请输入联系人手机号');
+            validate = false
+        }else if(!dxd.myValidata.isMobile(regInfo.contactMobile)){
+            $('#inputLXDH').validateNotify('手机号格式不正确');
+            validate = false
+        }
+        if(!regInfo.validateCode){
+            $('#cVCode').validateNotify('请输入验证码');
+            validate = false
+        }
+        if(!validate){
+            return;
+        }
+        if(!$('#companyMemberRule').prop('checked')){
+            dxd.alert('请勾选会员协议');
+            return;
+        }
         reg(regInfo);
     });
 
@@ -258,7 +342,11 @@
             url : contextPath + '/api/reg/add.do',
             data: regInfo,
             success:function(data){
-                dxd.alert(JSON.stringify(data));
+                if(data && data.re){
+                    dxd.alert("注册成功");
+                }else{
+                    dxd.alert(data.msg);
+                }
             }
         })
     }

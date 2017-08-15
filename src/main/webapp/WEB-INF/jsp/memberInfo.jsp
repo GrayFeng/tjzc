@@ -26,6 +26,7 @@
         </a>
         <a href="<%=request.getContextPath()%>/my/memberInfo.do" class="list-group-item active">我的信息</a>
         <a href="<%=request.getContextPath()%>/my/modifyPwd.do" class="list-group-item">修改密码</a>
+        <a href="<%=request.getContextPath()%>/my/rentRule.do" class="list-group-item">服务协议</a>
       </div>
     </div>
     <div class="my-center-content">
@@ -97,9 +98,24 @@
 <script src="<%=request.getContextPath()%>/static/js/my.js"></script>
 <script type="text/javascript">
   $('#updateBtn').on('click',function(){
+    var validate = true;
     var regInfo = {};
     regInfo.contact=$('#inputLXR').val();
     regInfo.contactMobile=$('#inputLXDH').val();
+    if(!regInfo.contact){
+      $('#inputLXR').validateNotify('请输入联系人');
+      validate = false
+    }
+    if(!regInfo.contactMobile){
+      $('#inputLXDH').validateNotify('请输入联系人手机号');
+      validate = false
+    }else if(!dxd.myValidata.isMobile(regInfo.contactMobile)){
+      $('#inputLXDH').validateNotify('手机号格式不正确');
+      validate = false
+    }
+    if(!validate){
+      return;
+    }
     dxd.ajax({
       url : contextPath + '/api/my/updateMemberInfo.do',
       data: regInfo,

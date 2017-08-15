@@ -398,3 +398,14 @@ footer{
 .display-none{
     display: none;
 }
+
+.validate-error{
+     border:1px red solid;
+ }
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color:red;
+}
+.tooltip-inner{
+    color: #fff;
+    background-color: red;
+}
