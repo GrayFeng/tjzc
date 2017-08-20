@@ -72,9 +72,9 @@
 <script type="text/javascript">
   $('#updateBtn').on('click',function(){
     var regInfo = {};
-    regInfo.oldPassword=$('#inputOldPassword').val();
-    regInfo.newPassword=$('#inputPassword2').val();
-    regInfo.newPassword1=$('#inputPassword3').val();
+    regInfo.oldPassword=$('#inputOldPassword').val1();
+    regInfo.newPassword=$('#inputPassword2').val1();
+    regInfo.newPassword1=$('#inputPassword3').val1();
     if(!regInfo.oldPassword){
       dxd.alert('请输入原密码');
       return;

@@ -59,14 +59,14 @@ var index = {
                 dxd.alert('请先登录');
                 return;
             }
-            console.info(index.tabFlag);
+            //console.info(index.tabFlag);
             if(index.tabFlag == 'rzbc'){
                 orderInfo.type = '1';
-                orderInfo.startTime = $('#orderTime').val();
-                orderInfo.startAddress = $('#orderStartAddress').val();
-                orderInfo.endAddress = $('#orderEndAddress').val();
-                orderInfo.customerCarType = $('#orderVehicle').val();
-                orderInfo.tenancy = $('input[name="type-radio"]:checked').val();
+                orderInfo.startTime = $('#orderTime').val1();
+                orderInfo.startAddress = $('#orderStartAddress').val1();
+                orderInfo.endAddress = $('#orderEndAddress').val1();
+                orderInfo.customerCarType = $('#orderVehicle').val1();
+                orderInfo.tenancy = $('input[name="type-radio"]:checked').val1();
                 if(!orderInfo.startTime){
                     $('#orderTime').validateNotify('请选择用车时间');
                     validate = false
@@ -81,13 +81,13 @@ var index = {
                 }
             }else if(index.tabFlag == 'jcjs'){
                 orderInfo.type = '2';
-                orderInfo.startTime = $('#orderTime').val();
-                orderInfo.startAddress = $('#orderStartAddress').val();
-                orderInfo.endAddress = $('#orderEndAddress').val();
-                orderInfo.customerCarType = $('#orderVehicle').val();
-                orderInfo.flightTrain = $('#orderFlightNumbe').val();
-                orderInfo.fetchSend = $('input[name="fetchSend-fly-type-radio"]:checked').val();
-                orderInfo.single = $('input[name="single-fly-type-radio"]:checked').val();
+                orderInfo.startTime = $('#orderTime').val1();
+                orderInfo.startAddress = $('#orderStartAddress').val1();
+                orderInfo.endAddress = $('#orderEndAddress').val1();
+                orderInfo.customerCarType = $('#orderVehicle').val1();
+                orderInfo.flightTrain = $('#orderFlightNumbe').val1();
+                orderInfo.fetchSend = $('input[name="fetchSend-fly-type-radio"]:checked').val1();
+                orderInfo.single = $('input[name="single-fly-type-radio"]:checked').val1();
                 if(!orderInfo.startTime){
                     $('#orderTime').validateNotify('请选择用车时间');
                     validate = false
@@ -106,13 +106,13 @@ var index = {
                 }
             }else if(index.tabFlag == 'czjs'){
                 orderInfo.type = '3';
-                orderInfo.startTime = $('#orderTime').val();
-                orderInfo.startAddress = $('#orderStartAddress').val();
-                orderInfo.endAddress = $('#orderEndAddress').val();
-                orderInfo.customerCarType = $('#orderVehicle').val();
-                orderInfo.flightTrain = $('#orderTrainNumbe').val();
-                orderInfo.fetchSend = $('input[name="fetchSend-type-radio"]:checked').val();
-                orderInfo.single = $('input[name="single-type-radio"]:checked').val();
+                orderInfo.startTime = $('#orderTime').val1();
+                orderInfo.startAddress = $('#orderStartAddress').val1();
+                orderInfo.endAddress = $('#orderEndAddress').val1();
+                orderInfo.customerCarType = $('#orderVehicle').val1();
+                orderInfo.flightTrain = $('#orderTrainNumbe').val1();
+                orderInfo.fetchSend = $('input[name="fetchSend-type-radio"]:checked').val1();
+                orderInfo.single = $('input[name="single-type-radio"]:checked').val1();
                 if(!orderInfo.startTime){
                     $('#orderTime').validateNotify('请选择用车时间');
                     validate = false
@@ -131,24 +131,24 @@ var index = {
                 }
             }else if(index.tabFlag == 'czdz'){
                 orderInfo.type = '4';
-                orderInfo.startTime = $('#orderCZTime').val();
-                orderInfo.customerCarType = $('#orderCZVehicle').val();
-                orderInfo.tenancy = $('#orderZQ').val();
+                orderInfo.startTime = $('#orderCZTime').val1();
+                orderInfo.customerCarType = $('#orderCZVehicle').val1();
+                orderInfo.tenancy = $('#orderZQ').val1();
                 if(!orderInfo.startTime){
                     $('#orderCZTime').validateNotify('请选择用车时间');
                     validate = false
                 }
             }else if(index.tabFlag == 'qybc'){
                 orderInfo.type = '5';
-                orderInfo.customerCarType = $('#orderQYBCVehicle').val();
-                orderInfo.remark = $('#orderQYBCOther').val();
-                orderInfo.tenancy = $('#orderQYBCZQ').val();
+                orderInfo.customerCarType = $('#orderQYBCVehicle').val1();
+                orderInfo.remark = $('#orderQYBCOther').val1();
+                orderInfo.tenancy = $('#orderQYBCZQ').val1();
                 if(!orderInfo.customerCarType){
                     $('#orderQYBCVehicle').validateNotify('请输入车型');
                     validate = false
                 }
             }
-            console.info(orderInfo);
+            //console.info(orderInfo);
             if(orderInfo.startTime
                 && orderInfo.startTime < dxd.getNowDateTime()){
                 $('#orderTime').validateNotify('请选择一个有效时间');

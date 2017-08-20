@@ -57,7 +57,7 @@
                         html+='<a href="#" class="thumbnail">';
                         html+='<img alt="100%x180" src="'+obj.url+'"/>';
                         html+='</a><div class="caption"><h4>'+obj.name+'</h4></div></div>';
-                    console.info(html)
+//                    console.info(html)
                     $('.visa-hot-country').html(html);
                 });
             }

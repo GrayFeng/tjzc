@@ -85,14 +85,14 @@ var selectAddress = function(){
         $("#keyword").on("keydown",function(){
             window.clearTimeout(keywordInput);
             keywordInput = setTimeout(function(){
-                var keyword = $("#keyword").val();
+                var keyword = $("#keyword").val1();
                 if(keyword){
                     Map.search(keyword);
                 }
             },300);
         });
         $("#searchBtn").on('click',function(){
-            var keyword = $("#keyword").val();
+            var keyword = $("#keyword").val1();
             if(keyword){
                 Map.search(keyword);
             }

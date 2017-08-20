@@ -174,11 +174,11 @@
     $('#personRegBtn').on('click',function(){
         var validate = true;
         var regInfo = {};
-        regInfo.loginName=$('#inputTel').val();
-        regInfo.displayName=$('#inputName').val();
-        regInfo.password=$('#inputPassword').val();
-        regInfo.idNumber=$('#inputIdNum').val();
-        regInfo.validateCode =$('#vCode').val();
+        regInfo.loginName=$('#inputTel').val1();
+        regInfo.displayName=$('#inputName').val1();
+        regInfo.password=$('#inputPassword').val1();
+        regInfo.idNumber=$('#inputIdNum').val1();
+        regInfo.validateCode =$('#vCode').val1();
         if(!regInfo.loginName){
             $('#inputTel').validateNotify('请输入手机号');
             validate = false
@@ -194,7 +194,7 @@
             $('#inputPassword').validateNotify('请输入密码');
             validate = false
         }
-        if(regInfo.password != $('#inputPassword1').val()){
+        if(regInfo.password != $('#inputPassword1').val1()){
             $('#inputPassword1').validateNotify('两次密码不一致');
             validate = false
         }
@@ -224,13 +224,13 @@
     $('#companyRegBtn').on('click',function(){
         var regInfo = {};
         var validate = true;
-        regInfo.loginName=$('#inputEmail').val();
-        regInfo.displayName=$('#inputCompanyName').val();
-        regInfo.password=$('#inputPassword2').val();
-        regInfo.taxId=$('#inputSH').val();
-        regInfo.contact=$('#inputLXR').val();
-        regInfo.contactMobile=$('#inputLXDH').val();
-        regInfo.validateCode =$('#cVCode').val();
+        regInfo.loginName=$('#inputEmail').val1();
+        regInfo.displayName=$('#inputCompanyName').val1();
+        regInfo.password=$('#inputPassword2').val1();
+        regInfo.taxId=$('#inputSH').val1();
+        regInfo.contact=$('#inputLXR').val1();
+        regInfo.contactMobile=$('#inputLXDH').val1();
+        regInfo.validateCode =$('#cVCode').val1();
         regInfo.type = 1;
         if(!regInfo.loginName){
             $('#inputEmail').validateNotify('请输入邮箱');
@@ -247,7 +247,7 @@
             $('#inputPassword2').validateNotify('请输入密码');
             validate = false
         }
-        if(regInfo.password != $('#inputPassword3').val()){
+        if(regInfo.password != $('#inputPassword3').val1()){
             $('#inputPassword3').validateNotify('两次密码不一致');
             validate = false
         }
@@ -292,10 +292,10 @@
     var sendIng = false;
     function send(type){
         var $btn = $('#vCodebtn');
-        var mobile = $('#inputTel').val();
+        var mobile = $('#inputTel').val1();
         if(type == 1){
             $btn = $('#cVCodebtn');
-            mobile = $('#inputLXDH').val();
+            mobile = $('#inputLXDH').val1();
         }
         if(!mobile){
             dxd.alert('请先输入手机号');

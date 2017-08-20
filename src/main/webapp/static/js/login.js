@@ -32,9 +32,9 @@ var login = {
 
         $('#loginBtn').on('click',function(){
             var validate = true;
-            var tel = $('#inputTel').val();
-            var email = $('#inputEmail').val();
-            var password = $('#inputPassword').val();
+            var tel = $('#inputTel').val1();
+            var email = $('#inputEmail').val1();
+            var password = $('#inputPassword').val1();
             var loginInfo = {};
             if(loginType == 0){
                 loginInfo.loginName = tel;

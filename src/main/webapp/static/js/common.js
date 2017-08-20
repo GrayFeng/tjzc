@@ -54,7 +54,7 @@ dxd.alert = function(msg){
 
 dxd.getNowDateTime = function(){
     var now = new Date();
-    var year = now.getYear() + 1900;
+    var year = now.getFullYear();
     var munth = now.getMonth() + 1;
     var date = now.getDate();
     var hour = now.getHours();
@@ -186,6 +186,15 @@ $.fn.validateNotify = function(msg){
     $(this).tooltip({title:msg,placement:'bottom'});
 }
 
+$.fn.val1 = function(){
+    var placeholder = $(this).attr('placeholder');
+    var val = $(this).val();
+    if(val == placeholder){
+        val = '';
+    }
+    return val;
+};
+
 $('input').on('click',function(){
     var hasTooltip = $(this).attr('has-tooltip');
     if(hasTooltip){
@@ -194,3 +203,35 @@ $('input').on('click',function(){
         $(this).tooltip('destroy');
     }
 });
+
+
+(function(){
+    if(navigator.userAgent.indexOf('MSIE 8.0') > -1){
+        $.each($('input'),function(i,input){
+            var placeholder = $(this).attr('placeholder');
+            if($(input).val() == ''){
+                if($(input).attr('type') == 'password'){
+                    return;
+                }
+                $(input).val(placeholder);
+                $(input).addClass('color-gray');
+            }
+        });
+        $('input').on('focus',function(){
+            var placeholder = $(this).attr('placeholder');
+            if($(this).val() == placeholder){
+                $(this).val('');
+                $(this).removeClass('color-gray');
+            }
+        }).on('blur',function(){
+            var placeholder = $(this).attr('placeholder');
+            if($(this).val() == ''){
+                if($(this).attr('type') == 'password'){
+                    return;
+                }
+                $(this).val(placeholder);
+                $(this).addClass('color-gray');
+            }
+        });
+    }
+})();

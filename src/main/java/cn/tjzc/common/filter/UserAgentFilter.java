@@ -8,9 +8,6 @@ import java.io.IOException;
 
 /**
  * Description: UserAgentFilter.java
- * All Rights Reserved.
- * @version 1.0  2014年3月10日 下午1:06:31  
- * @author Gray(jy.feng@zuche.com) 
  */
 
 public class UserAgentFilter implements Filter{

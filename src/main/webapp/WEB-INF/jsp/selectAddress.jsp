@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-5 col-xs-5">
                         <div class="input-group">
-                            <input id="keyword" type="text" class="form-control" aria-label="Text input with multiple buttons">
+                            <input id="keyword" placeholder="请输入地址关键字" type="text" class="form-control" aria-label="Text input with multiple buttons">
                             <div class="input-group-btn">
                                 <button id="searchBtn" type="button" class="btn btn-default" aria-label="Bold"><span class="glyphicon glyphicon-search"></span></button>
                             </div>

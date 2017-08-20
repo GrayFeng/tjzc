@@ -100,8 +100,8 @@
   $('#updateBtn').on('click',function(){
     var validate = true;
     var regInfo = {};
-    regInfo.contact=$('#inputLXR').val();
-    regInfo.contactMobile=$('#inputLXDH').val();
+    regInfo.contact=$('#inputLXR').val1();
+    regInfo.contactMobile=$('#inputLXDH').val1();
     if(!regInfo.contact){
       $('#inputLXR').validateNotify('请输入联系人');
       validate = false

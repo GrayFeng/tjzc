@@ -38,8 +38,8 @@ var my = {
         if(my.status > 0){
             param.status = my.status;
         }
-        var startTime = $('#startTime').val();
-        var endTime = $('#endTime').val();
+        var startTime = $('#startTime').val1();
+        var endTime = $('#endTime').val1();
         if(startTime && !endTime){
             dxd.alert('请选择结束时间');
             return;
