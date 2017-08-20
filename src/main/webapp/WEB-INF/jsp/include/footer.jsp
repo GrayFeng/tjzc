@@ -76,7 +76,7 @@
         </dd>
       </dl>
       <dl>
-        <dd>
+        <dd style="text-align: left;padding-left: 30px;">
           <br> QQ:<br>11111111<br><br>
           联系电话:<br>4000000000
         </dd>

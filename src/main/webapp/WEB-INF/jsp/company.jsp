@@ -93,60 +93,100 @@
     <h3>合作伙伴</h3>
 
     <div class="row visa-hot-country">
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p1.png"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p11.png"/>
             </a>
             <div class="caption">
                 <h4>渣打银行</h4>
             </div>
         </div>
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p2.png"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p12.png"/>
             </a>
             <div class="caption">
                 <h4>天津波音复合材料有限责任公司</h4>
             </div>
         </div>
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p3.png"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p13.png"/>
             </a>
             <div class="caption">
                 <h4>富士通点电子有限公司</h4>
             </div>
         </div>
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p4.png"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p14.png"/>
             </a>
             <div class="caption">
                 <h4>柯梅令（天津）高分子型材有限公司</h4>
             </div>
         </div>
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p5.png"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p15.png"/>
             </a>
             <div class="caption">
-                <h4>雀巢普瑞纳宠物食品有限公司</h4>
+                <h4>雀巢普瑞纳</h4>
             </div>
         </div>
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p6.png" style="width:150px"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p16.png" />
             </a>
             <div class="caption">
-                <h4>天津利顺德大饭店</h4>
+                <h4>利顺德酒店</h4>
             </div>
         </div>
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p7.png"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p17.png"/>
             </a>
             <div class="caption">
                 <h4>日航酒店</h4>
+            </div>
+        </div>
+        <div class="col-xs-2 col-md-2">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p18.jpg"/>
+            </a>
+            <div class="caption">
+                <h4>天士力</h4>
+            </div>
+        </div>
+        <div class="col-xs-2 col-md-2">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p19.jpg"/>
+            </a>
+            <div class="caption">
+                <h4>海河英迪格酒店</h4>
+            </div>
+        </div>
+        <div class="col-xs-2 col-md-2">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p20.png"/>
+            </a>
+            <div class="caption">
+                <h4>珊华电子科技（上海）有限公司</h4>
+            </div>
+        </div>
+        <div class="col-xs-2 col-md-2">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p21.png"/>
+            </a>
+            <div class="caption">
+                <h4>电气化学</h4>
+            </div>
+        </div>
+        <div class="col-xs-2 col-md-2">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/company/p22.jpg"/>
+            </a>
+            <div class="caption">
+                <h4>通用半导体（中国）有限公司</h4>
             </div>
         </div>
     </div>

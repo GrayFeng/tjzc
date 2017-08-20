@@ -39,20 +39,31 @@
     }
 
     .service-icon img{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
 
+.visa-hot-country{
+    margin-bottom: 30px;
+}
+
+.visa-hot-country .col-xs-2{
+    height: 165px;
+}
+
+
+
     .visa-hot-country img{
-        height: 120px;
+        height: 100px;
         width: 100%;
         display: block;
     }
 .visa-hot-country h3{
     margin-top: 0;
+    margin-bottom: 20px;
 }
 .service-icon h4,
 .visa-hot-country h4{
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
 }
