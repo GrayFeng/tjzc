@@ -29,14 +29,14 @@
                         </c:otherwise>
                     </c:choose>
                     <li class="nav-tel-icon"><a href="#"><i></i></a></li>
-                    <li class="nav-tel-number"><a href="#">400-000-0000</a></li>
+                    <li class="nav-tel-number"><a href="#">022-23556703</a></li>
                 </ul>
             </div>
             <div style="background-color: #33cc00;">
             <div class="container navbar-box">
             <div class="container navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<%=request.getContextPath()%>/">首页</a></li>
+                        <li><a href="<%=request.getContextPath()%>/">首页</a></li>
                         <li class="dropdown">
                             <a href="<%=request.getContextPath()%>/rent/index.do" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false">我要用车</a>

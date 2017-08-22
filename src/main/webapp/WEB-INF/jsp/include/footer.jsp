@@ -55,8 +55,8 @@
       <dl>
         <dt>帮助中心</dt>
         <dd>
-          <a href="<%=request.getContextPath()%>/contactus.do">修改订单</a>
-          <a href="<%=request.getContextPath()%>/contactus.do">取消订单</a>
+          <a href="<%=request.getContextPath()%>/help.do">修改订单</a>
+          <a href="<%=request.getContextPath()%>/help.do">取消订单</a>
           <a href="<%=request.getContextPath()%>/contactus.do">联系我们</a>
         </dd>
       </dl>
@@ -65,7 +65,7 @@
         <dd>
           <a href="<%=request.getContextPath()%>/help.do">订单查询</a>
           <a href="<%=request.getContextPath()%>/help.do">信息修改</a>
-          <a href="<%=request.getContextPath()%>/contactus.do">用车须知</a>
+          <a href="<%=request.getContextPath()%>/help.do">用车须知</a>
         </dd>
       </dl>
       <dl>
@@ -76,9 +76,9 @@
         </dd>
       </dl>
       <dl>
-        <dd style="text-align: left;padding-left: 30px;">
-          <br> QQ:<br>11111111<br><br>
-          联系电话:<br>4000000000
+        <dd style="text-align: left;padding-left: 40px;">
+          <br> QQ:<br>2963007610<br><br>
+          联系电话:<br>022-23556703
         </dd>
       </dl>
       </div>

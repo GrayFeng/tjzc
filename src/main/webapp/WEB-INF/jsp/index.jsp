@@ -21,22 +21,22 @@
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- Indicators
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    </ol>-->
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
+       <!-- <div class="item active">
             <img src="<%=request.getContextPath()%>/static/image/banner-01.jpg">
-        </div>
-        <div class="item">
+        </div>-->
+        <div class="item active">
             <img src="<%=request.getContextPath()%>/static/image/banner-02.jpg">
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <img src="<%=request.getContextPath()%>/static/image/banner-03.jpg">
-        </div>
+        </div>-->
     </div>
 </div>
 <!-- /.carousel -->
