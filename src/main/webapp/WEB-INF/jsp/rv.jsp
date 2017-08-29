@@ -41,7 +41,7 @@
     <div class="row visa-hot-country">
         <div class="col-xs-4 col-md-4">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/hot-01.jpg"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/rv/hot-01.jpg"/>
             </a>
             <div class="caption">
                 <h4>活动1</h4>
@@ -49,7 +49,7 @@
         </div>
         <div class="col-xs-4 col-md-4">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/hot-01.jpg"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/rv/hot-02.jpg"/>
             </a>
             <div class="caption">
                 <h4>活动2</h4>
@@ -57,7 +57,7 @@
         </div>
         <div class="col-xs-4 col-md-4">
             <a href="#" class="thumbnail">
-                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/hot-01.jpg"/>
+                <img alt="100%x180" src="<%=request.getContextPath()%>/static/image/rv/hot-03.jpg"/>
             </a>
             <div class="caption">
                 <h4>活动3</h4>
