@@ -343,7 +343,8 @@
             data: regInfo,
             success:function(data){
                 if(data && data.re){
-                    dxd.alert("注册成功");
+//                    dxd.alert("注册成功");
+                    location.href = contextPath + "/login.do";
                 }else{
                     dxd.alert(data.msg);
                 }

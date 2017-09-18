@@ -27,9 +27,20 @@
       <h2 class="form-signin-heading company">企业</h2>
     </div>
     <div class="login-content-box">
-      <input type="email" id="inputEmail" class="form-control display-none" placeholder="电子邮箱" required autofocus>
-      <input type="tel" id="inputTel" class="form-control" placeholder="手机号" required autofocus>
-      <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+      <div class="input-group  tel-input-group">
+        <span class="input-group-addon" id="basic-addon1">账号:</span>
+        <input type="tel" id="inputTel" class="form-control" placeholder="手机号" aria-describedby="basic-addon1" required autofocus>
+      </div>
+      <div class="input-group  email-input-group" style="display: none;">
+        <span class="input-group-addon" id="basic-addon2">邮箱:</span>
+        <input type="email" id="inputEmail" class="form-control" placeholder="电子邮箱" aria-describedby="basic-addon2" required autofocus>
+      </div>
+      <div class="input-group  password-input-group">
+        <span class="input-group-addon" id="basic-addon3">密码:</span>
+        <input type="password" id="inputPassword" class="form-control" placeholder="密码" aria-describedby="basic-addon3" required>
+      </div>
+
+
       <!--<div class="checkbox">
         <label>
           <input type="checkbox" value="remember-me"> 记住我

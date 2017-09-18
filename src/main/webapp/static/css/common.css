@@ -395,6 +395,23 @@ footer{
     word-wrap: break-word;
 }
 
+.modal-body .success-icon{
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 20px;
+    background: url('../image/success-icon.png') no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+.modal-body p{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    /* line-height: 48px; */
+    vertical-align: top;
+}
+
 .display-none{
     display: none;
 }

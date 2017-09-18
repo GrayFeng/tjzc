@@ -166,7 +166,7 @@ var index = {
             data: orderInfo,
             success: function(data){
                 if(data && data.status == "200" && data.re){
-                    dxd.alert("预定成功");
+                    dxd.messaageBox("预定成功")
                 }
             }
         });

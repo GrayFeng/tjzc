@@ -52,6 +52,20 @@ dxd.alert = function(msg){
 
 };
 
+
+dxd.messaageBox = function(msg){
+    var html = '<div id="dxd-common-alert" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">'+
+        '<div class="modal-dialog" role="document">'+
+        '<div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
+        '<span aria-hidden="true">×</span></button></div><div class="modal-body" style="font-size: 32px;height: 150px;"><i class="success-icon"></i><p></p></div></div></div></div>';
+    if(!$('#dxd-common-alert').html()){
+        $(html).appendTo(document.body);
+    }
+    $('#dxd-common-alert .modal-body p').html(msg);
+    $('#dxd-common-alert').modal('show')
+
+};
+
 dxd.getNowDateTime = function(){
     var now = new Date();
     var year = now.getFullYear();
@@ -206,7 +220,8 @@ $('input').on('click',function(){
 
 
 (function(){
-    if(navigator.userAgent.indexOf('MSIE 8.0') > -1){
+    if(navigator.userAgent.indexOf('MSIE 8.0') > -1
+        || navigator.userAgent.indexOf('MSIE 9.0') > -1){
         $.each($('input'),function(i,input){
             var placeholder = $(this).attr('placeholder');
             if($(input).val() == ''){

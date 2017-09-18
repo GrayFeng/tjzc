@@ -13,12 +13,12 @@ var login = {
 
             if($(this).hasClass('person')){
                 loginType = 0;
-                $('#inputTel').show();
-                $('#inputEmail').hide();
+                $('.tel-input-group').show();
+                $('.email-input-group').hide();
             }else{
                 loginType = 1;
-                $('#inputTel').hide();
-                $('#inputEmail').show();
+                $('.tel-input-group').hide();
+                $('.email-input-group').show();
             }
 
             $('.login-tab-box h2').each(function(i,o){

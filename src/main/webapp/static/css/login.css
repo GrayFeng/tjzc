@@ -46,8 +46,12 @@
 .login-content-box{
     padding: 15px;
 }
-.login-content-box .form-control{
+.login-content-box .input-group{
     margin-bottom: 30px;
+    height: 45px;
+}
+
+.login-content-box .form-control{
     height: 45px;
 }
 .login-content-box button{

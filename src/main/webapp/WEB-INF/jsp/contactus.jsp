@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="my-center-content">
-      <p>服务热线：022-23556703</p>
+      <p><span style="display: inline-block;vertical-align: top;">服务热线：</span><span style="display: inline-block">022-23556703<br>022-23556705<br>13116058773</span></p>
       <p>在线客服：QQ2963007610</p>
       <p>公司传真：022-23347817</p>
       <p>渠道合作：022-23556705</p>

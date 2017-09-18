@@ -54,7 +54,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="<%=request.getContextPath()%>/tours/index.do">国内旅游</a></li>
                                 <li><a href="<%=request.getContextPath()%>/tours/index.do#abroad">出境旅游</a></li>
-                                <li><a href="<%=request.getContextPath()%>/tours/index.do#business">商务旅游</a></li>
+                                <!--<li><a href="<%=request.getContextPath()%>/tours/index.do#business">商务旅游</a></li>-->
                                 <li><a href="<%=request.getContextPath()%>/visa/index.do">签证办理</a></li>
                             </ul>
                         </li>
