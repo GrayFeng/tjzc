@@ -14,6 +14,17 @@
     <link href="<%=request.getContextPath()%>/static/css/index.css" rel="stylesheet">
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TR8b21eM8ofQ1sPEND1udSrixkwGEEIQ"></script>
     <title>首页</title>
+    <style>
+        .carousel-item-a {
+            display: block;
+            width: 100%;
+            height: 450px;
+            background-position: center center;
+            overflow: hidden;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
 
@@ -32,7 +43,7 @@
             <img src="<%=request.getContextPath()%>/static/image/banner-01.jpg">
         </div>-->
         <div class="item active">
-            <img src="<%=request.getContextPath()%>/static/image/banner-02.jpg">
+            <a class="carousel-item-a" style="background-image: url(<%=request.getContextPath()%>/static/image/banner-02.jpg)"> </a>
         </div>
         <!-- <div class="item">
             <img src="<%=request.getContextPath()%>/static/image/banner-03.jpg">
@@ -57,7 +68,7 @@
         </div>
         <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/02.jpg">
+                <img src="<%=request.getContextPath()%>/static/image/index/GL8.jpg">
             </a>
             <div class="caption">
                 <h4>别克GL8</h4>
@@ -73,7 +84,7 @@
         </div>
         <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/06.jpg">
+                <img src="<%=request.getContextPath()%>/static/image/index/audi.jpg">
             </a>
             <div class="caption">
                 <h4>奥迪A6L</h4>
@@ -97,18 +108,18 @@
         </div>
         <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/07.jpg">
+                <img src="<%=request.getContextPath()%>/static/image/index/kmr.jpg">
             </a>
             <div class="caption">
-                <h4>雪弗兰景程</h4>
+                <h4>凯美瑞</h4>
             </div>
         </div>
         <div class="col-xs-3 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/08.jpg">
+                <img src="<%=request.getContextPath()%>/static/image/index/kst.jpg">
             </a>
             <div class="caption">
-                <h4>大众帕萨特</h4>
+                <h4>考斯特</h4>
             </div>
         </div>
     </div>
@@ -122,7 +133,7 @@
     <div class="row featurette hot-car-box">
         <div class="col-md-3">
             <a href="<%=request.getContextPath()%>/rent/index.do">
-                <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
+                <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-rent.jpg"
                  alt="Generic placeholder image">
             </a>
         </div>
@@ -140,13 +151,13 @@
                     <span><img src="<%=request.getContextPath()%>/static/image/hot-03.jpg"></span>
                 </a>
                 <a href="<%=request.getContextPath()%>/visa/index.do">
-                    <span><img src="<%=request.getContextPath()%>/static/image/hot-04.jpg"></span>
+                    <span><img src="<%=request.getContextPath()%>/static/image/hot-qz.jpg"></span>
                 </a>
             </div>
         </div>
         <div class="col-md-3">
             <a href="<%=request.getContextPath()%>/rv/index.do">
-                <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-top.jpg"
+                <img class="featurette-image img-responsive center-block" src="<%=request.getContextPath()%>/static/image/hot-rv.jpg"
                      alt="Generic placeholder image">
             </a>
         </div>
