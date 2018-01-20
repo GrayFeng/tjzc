@@ -115,10 +115,10 @@
         </div>
         <div class="col-xs-4 col-md-4">
             <a href="#" class="thumbnail">
-                <img src="<%=request.getContextPath()%>/static/image/index/kst.jpg">
+                <img src="<%=request.getContextPath()%>/static/image/index/yg.jpg">
             </a>
             <div class="caption">
-                <h4>考斯特</h4>
+                <h4>本田雅阁</h4>
             </div>
         </div>
         <div class="col-xs-4 col-md-4">
