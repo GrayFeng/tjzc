@@ -44,7 +44,7 @@
                 <div class="order-item">
                     <label class="order-item-label">选择车型</label>
                     <select class="form-control order-item-input" id="orderVehicle">
-                        <option value="公务型">公务型</option>
+                        <option value="舒适型">舒适型</option>
                         <option value="商务型">商务型</option>
                         <option value="豪华型">豪华型</option>
                         <option value="其他">其他</option>

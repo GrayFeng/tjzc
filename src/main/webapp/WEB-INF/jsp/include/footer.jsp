@@ -83,7 +83,7 @@
       </dl>
       </div>
     <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
-    <p>&copy; 2017 大行道, Inc. &middot; <a href="#">津ICP备000000000号</a><!-- &middot; <a href="#">Terms</a>--></p>
+    <p>&copy; 2017 大行道, Inc. &middot; <a href="#">津ICP备17009302号-1</a><!-- &middot; <a href="#">Terms</a>--></p>
   </footer>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<%=request.getContextPath()%>/static/js/bootstrap.min.js"></script>
